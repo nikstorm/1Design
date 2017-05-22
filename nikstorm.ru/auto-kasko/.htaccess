@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+<Limit GET POST>
+order allow,deny
+deny from 46.98.214.70
+allow from all
+</Limit>
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(.*)?sіte\.com/.*$ [NC] 
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?google.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yandex.ru [NC] 
+RewriteRule \.(jpeg|png|bmp|gif|jpg)$ %{HTTP_REFERER}?request=fuck_you [NC,R,NE,L]

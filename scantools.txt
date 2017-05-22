@@ -1,0 +1,213 @@
+SecTools.Org: Top 125 Network Security Tools
+
+For more than a decade, the Nmap Project has been cataloguing the network security community's favorite tools. In 2011 this site became much more dynamic, offering ratings, reviews, searching, sorting, and a new tool suggestion form. This site allows open source and commercial tools on any platform, except those tools that we maintain (such as the Nmap Security Scanner, Ncat network connector, and Nping packet manipulator).
+
+We're very impressed by the collective smarts of the security community and we highly recommend reading the whole list and investigating any tools you are unfamiliar with. Click any tool name for more details on that particular application, including the chance to read (and write) reviews. Many site elements are explained by tool tips if you hover your mouse over them. Enjoy!
+
+Filtering by tag: windows remove filters
+Sort by: popularity rating release date
+Tools 1–25 of 107 next page →
+
+(21)★★★★½ Wireshark (#1, 1)
+
+Wireshark logo
+Wireshark (known as Ethereal until a trademark dispute in Summer 2006) is a fantastic open source multi-platform network protocol analyzer. It allows you to examine data from a live network or from a capture file on disk. You can interactively browse the capture data, delving down into just the level of packet detail you need. Wireshark has several powerful features, including a rich display filter language and the ability to view the reconstructed stream of a TCP session. It also supports hundreds of protocols and media types. A tcpdump-like console version named tshark is included. One word of caution is that Wireshark has suffered from dozens of remotely exploitable security holes, so stay up-to-date and be wary of running it on untrusted or hostile networks (such as security conferences). Read 36 reviews.
+
+Latest release: version 1.12.7 on Aug. 12, 2015 (1 year, 6 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Mouse icon  Magnifying glass icon sniffers
+(10)★★★★½ Metasploit (#2, 3)
+
+Metasploit logo
+Metasploit took the security world by storm when it was released in 2004. It is an advanced open-source platform for developing, testing, and using exploit code. The extensible model through which payloads, encoders, no-op generators, and exploits can be integrated has made it possible to use the Metasploit Framework as an outlet for cutting-edge exploitation research. It ships with hundreds of exploits, as you can see in their list of modules. This makes writing your own exploits easier, and it certainly beats scouring the darkest corners of the Internet for illicit shellcode of dubious quality. One free extra is Metasploitable, an intentionally insecure Linux virtual machine you can use for testing Metasploit and other exploitation tools without hitting live servers.
+
+Metasploit was completely free, but the project was acquired by Rapid7 in 2009 and it soon sprouted commercial variants. The Framework itself is still free and open source, but they now also offer a free-but-limited Community edition, a more advanced Express edition ($5,000 per year per user), and a full-featured Pro edition. Other paid exploitation tools to consider are Core Impact (more expensive) and Canvas (less).
+
+The Metasploit Framework now includes an official Java-based GUI and also Raphael Mudge's excellent Armitage. The Community, Express, and Pro editions have web-based GUIs. Read 16 reviews.
+
+Latest release: version 4.11 on Dec. 18, 2014 (2 years, 2 months ago).
+
+ Home icon  Wikipedia icon  $  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Mouse icon  Magnifying glass icon sploits
+(14)★★★ Nessus (#3, 2)
+
+Nessus logo
+Nessus is one of the most popular and capable vulnerability scanners, particularly for UNIX systems. It was initially free and open source, but they closed the source code in 2005 and removed the free "Registered Feed" version in 2008. It now costs $2,190 per year, which still beats many of its competitors. A free “Nessus Home” version is also available, though it is limited and only licensed for home network use.
+
+Nessus is constantly updated, with more than 70,000 plugins. Key features include remote and local (authenticated) security checks, a client/server architecture with a web-based interface, and an embedded scripting language for writing your own plugins or understanding the existing ones. Read 17 reviews.
+
+Latest release: version 6.3.3 on March 16, 2015 (1 year, 11 months ago).
+
+ Home icon  Wikipedia icon  $  Linux penguin icon  OS X icon  Windows icon  Mouse icon vuln-scanners
+(10)★★★★ Aircrack (#4, 17)
+
+Aircrack logo
+Aircrack is a suite of tools for 802.11a/b/g WEP and WPA cracking. It implements the best known cracking algorithms to recover wireless keys once enough encrypted packets have been gathered. . The suite comprises over a dozen discrete tools, including airodump (an 802.11 packet capture program), aireplay (an 802.11 packet injection program), aircrack (static WEP and WPA-PSK cracking), and airdecap (decrypts WEP/WPA capture files). Read 18 reviews.
+
+Latest release: version 1.1 on April 24, 2010 (6 years, 10 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon pass-audit wireless
+(1)★★★★★ Snort (#5, 2)
+
+Snort logo
+This network intrusion detection and prevention system excels at traffic analysis and packet logging on IP networks. Through protocol analysis, content searching, and various pre-processors, Snort detects thousands of worms, vulnerability exploit attempts, port scans, and other suspicious behavior. Snort uses a flexible rule-based language to describe traffic that it should collect or pass, and a modular detection engine. Also check out the free Basic Analysis and Security Engine (BASE), a web interface for analyzing Snort alerts.
+
+While Snort itself is free and open source, parent company SourceFire offers their VRT-certified rules for $499 per sensor per year and a complementary product line of software and appliances with more enterprise-level features. Sourcefire also offers a free 30-day delayed feed. Read 2 reviews.
+
+Latest release: version 2.9.7.5 on July 23, 2015 (1 year, 6 months ago).
+
+ Home icon  Wikipedia icon  $  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon ids
+(7)★★★★ Cain and Abel (#6, 3)
+
+Cain and Abel logo
+UNIX users often smugly assert that the best free security tools support their platform first, and Windows ports are often an afterthought. They are usually right, but Cain & Abel is a glaring exception. This Windows-only password recovery tool handles an enormous variety of tasks. It can recover passwords by sniffing the network, cracking encrypted passwords using dictionary, brute-force and cryptanalysis attacks, recording VoIP conversations, decoding scrambled passwords, revealing password boxes, uncovering cached passwords and analyzing routing protocols. It is also well documented. Read 15 reviews.
+
+Latest release: version 4.9.56 on April 7, 2014 (2 years, 10 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Windows icon  Mouse icon pass-audit sniffers
+(8)★★★★½ Netcat (#8, 4)
+
+Netcat logo
+This simple utility reads and writes data across TCP or UDP network connections. It is designed to be a reliable back-end tool to use directly or easily drive by other programs and scripts. At the same time, it is a feature-rich network debugging and exploration tool, since it can create almost any kind of connection you would need, including port binding to accept incoming connections.
+
+The original Netcat was released by Hobbit in 1995, but it hasn't been maintained despite its popularity. It can sometimes even be hard to find a copy of the v1.10 source code. The flexibility and usefulness of this tool prompted the Nmap Project to produce Ncat, a modern reimplementation which supports SSL, IPv6, SOCKS and http proxies, connection brokering, and more. Other takes on this classic tool include the amazingly versatile Socat, OpenBSD's nc, Cryptcat, Netcat6, pnetcat, SBD, and so-called GNU Netcat. Read 11 reviews.
+
+Latest release: version 1.10 on March 20, 1996 (20 years, 11 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon general packet-crafters
+(1)★★★★ tcpdump (#9, 1)
+
+tcpdump logo
+Tcpdump is the network sniffer we all used before (Wireshark) came on the scene, and many of us continue to use it frequently. It may not have the bells and whistles (such as a pretty GUI and parsing logic for hundreds of application protocols) that Wireshark has, but it does the job well and with less security risk. It also requires fewer system resources. While Tcpdump doesn't receive new features often, it is actively maintained to fix bugs and portability problems. It is great for tracking down network problems or monitoring activity. There is a separate Windows port named WinDump. tcpdump is the source of the Libpcap/WinPcap packet capture library, which is used by Nmap and many other tools. Read 2 reviews.
+
+Latest release: version 4.7.4 on April 22, 2015 (1 year, 10 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon sniffers
+(4)★★★★ John the Ripper (#10, unchanged)
+
+John the Ripper logo
+John the Ripper is a fast password cracker for UNIX/Linux and Mac OS X.. Its primary purpose is to detect weak Unix passwords, though it supports hashes for many other platforms as well. There is an official free version, a community-enhanced version (with many contributed patches but not as much quality assurance), and an inexpensive pro version. You will probably want to start with some wordlists, which you can find here, here, or here. Read 9 reviews.
+
+Latest release: version 1.8.0 on May 30, 2013 (3 years, 8 months ago).
+
+ Home icon  Wikipedia icon  $  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon pass-audit
+(1)★★★★★ Kismet (#11, 4)
+
+Kismet logo
+Kismet is a console (ncurses) based 802.11 layer-2 wireless network detector, sniffer, and intrusion detection system. It identifies networks by passively sniffing (as opposed to more active tools such as NetStumbler), and can even decloak hidden (non-beaconing) networks if they are in use. It can automatically detect network IP blocks by sniffing TCP, UDP, ARP, and DHCP packets, log traffic in Wireshark/tcpdump compatible format, and even plot detected networks and estimated ranges on downloaded maps. As you might expect, this tool is commonly used for wardriving. Oh, and also warwalking, warflying, and warskating, etc. Read 1 review.
+
+Latest release: version Kismet-2013-03-R1b on April 8, 2013 (3 years, 10 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon sniffers wireless
+(2)★★★★★ OpenSSH/PuTTY/SSH (#12, 2)
+
+OpenSSH/PuTTY/SSH logo
+SSH (Secure Shell) is the now ubiquitous program for logging into or executing commands on a remote machine. It provides secure encrypted communications between two untrusted hosts over an insecure network, replacing the hideously insecure telnet/rlogin/rsh alternatives. Most UNIX users run the open source OpenSSH server and client. Windows users often prefer the free PuTTY client, which is also available for many mobile devices, and WinSCP. Other Windows users prefer the nice terminal-based port of OpenSSH that comes with Cygwin. There are dozens of other free and proprietary clients to consider as well. Read 2 reviews.
+
+ Home icon  Home icon  Home icon  Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon crypto
+(14)★★★★★ Burp Suite (#13, 63)
+
+Burp Suite logo
+Burp Suite is an integrated platform for attacking web applications. It contains a variety of tools with numerous interfaces between them designed to facilitate and speed up the process of attacking an application. All of the tools share the same framework for handling and displaying HTTP messages, persistence, authentication, proxies, logging, alerting and extensibility. There is a limited free version and also Burp Suite Professional ($299 per user per year). Read 16 reviews.
+
+Latest release: version 1.4.01 on June 3, 2011 (5 years, 8 months ago).
+
+ Home icon  $  Linux penguin icon  OS X icon  Windows icon  Mouse icon web-scanners
+(9)★★★★ Nikto (#14, 2)
+
+Nikto logo
+Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6400 potentially dangerous files/CGIs, checks for outdated versions of over 1200 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated. Read 14 reviews.
+
+Latest release: version 2.1.4 on Feb. 20, 2011 (5 years, 12 months ago).
+
+ Home icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon web-scanners
+(3)★★★★★ Hping (#15, 9)
+
+Hping logo
+This handy little utility assembles and sends custom ICMP, UDP, or TCP packets and then displays any replies. It was inspired by the ping command, but offers far more control over the probes sent. It also has a handy traceroute mode and supports IP fragmentation. Hping is particularly useful when trying to traceroute/ping/probe hosts behind a firewall that blocks attempts using the standard utilities. This often allows you to map out firewall rule sets. It is also great for learning more about TCP/IP and experimenting with IP protocols. Unfortunately, it hasn't been updated since 2005. The Nmap Project created and maintains Nping, a similar program with more modern features such as IPv6 support, and a unique echo mode. Read 4 reviews.
+
+Latest release: version hping3-20051105 on Nov. 5, 2005 (11 years, 3 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon packet-crafters
+(5)★★★★★ Ettercap (#16, 5)
+
+Ettercap logo
+Ettercap is a suite for man in the middle attacks on LAN. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols (even ciphered ones) and includes many feature for network and host analysis. Read 7 reviews.
+
+Latest release: version 0.8.2-Ferri on March 14, 2015 (1 year, 11 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Mouse icon  Magnifying glass icon sniffers traffic-monitors
+(1)★★★★★ Sysinternals (#17, 7)
+
+Sysinternals provides many small windows utilities that are quite useful for low-level windows hacking. Some are free of cost and/or include source code, while others are proprietary. Survey respondents were most enamored with:
+
+ProcessExplorer for keeping an eye on the files and directories open by any process (like lsof on UNIX).
+PsTools for managing (executing, suspending, killing, detailing) local and remote processes.
+Autoruns for discovering what executables are set to run during system boot up or login.
+RootkitRevealer for detecting registry and file system API discrepancies that may indicate the presence of a user-mode or kernel-mode rootkit.
+TCPView, for viewing TCP and UDP traffic endpoints used by each process (like Netstat on UNIX).
+Many of the Sysinternals tools originally came with source code and there were even Linux versions. Microsoft acquired Sysinternals in July 2006, promising that “Customers will be able to continue building on Sysinternals' advanced utilities, technical information and source code”. Less than four months later, Microsoft removed most of that source code. Read 1 review.
+
+Latest release: Feb. 4, 2011 (6 years ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Windows icon  Terminal window icon  Mouse icon rootkit-detectors
+(15)★★★½ w3af (#18, new!)
+
+w3af logo
+W3af is an extremely popular, powerful, and flexible framework for finding and exploiting web application vulnerabilities. It is easy to use and extend and features dozens of web assessment and exploitation plugins. In some ways it is like a web-focused Metasploit. Read 17 reviews.
+
+Latest release: version 1.1 on Oct. 11, 2011 (5 years, 4 months ago).
+
+ Home icon  Wikipedia icon  New!  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon fuzzers sploits web-scanners
+(27)★★★½ OpenVAS (#19, new!)
+
+OpenVAS logo
+OpenVAS is a vulnerability scanner that was forked from the last free version of Nessus after that tool went proprietary in 2005. OpenVAS plugins are still written in the Nessus NASL language. The project seemed dead for a while, but development has restarted. Read 32 reviews.
+
+Latest release: version 8.0 on April 2, 2015 (1 year, 10 months ago).
+
+ Home icon  Wikipedia icon  New!  "Free" price tag icon  Linux penguin icon  Windows icon  Mouse icon  Magnifying glass icon vuln-scanners
+(1)★★★★★ Scapy (#20, 8)
+
+Scapy is a powerful interactive packet manipulation tool, packet generator, network scanner, network discovery tool, and packet sniffer. Note that Scapy is a very low-level tool—you interact with it using the Python programming language. It provides classes to interactively create packets or sets of packets, manipulate them, send them over the wire, sniff other packets from the wire, match answers and replies, and more. Read 2 reviews.
+
+Latest release: version 2.2.0 on Feb. 28, 2011 (5 years, 11 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon packet-crafters
+(2)★★★★★ Ping/telnet/dig/traceroute/whois/netstat (#21, 8)
+
+While there are many advanced high-tech tools out there to assist in security auditing, don't forget about the basics! Everyone should be very familiar with these tools as they come with most operating systems (except that Windows omits whois and uses the name tracert). They can be very handy in a pinch, although more advanced functionality is available from Hping and Netcat. Read 4 reviews.
+
+ "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon general
+(7)★★★★★ THC Hydra (#22, 7)
+
+THC Hydra logo
+When you need to brute force crack a remote authentication service, Hydra is often the tool of choice. It can perform rapid dictionary attacks against more than 50 protocols, including telnet, ftp, http, https, smb, several databases, and much more. Like THC Amap this release is from the fine folks at THC. Other online crackers are Medusa and Ncrack. The Nmap Security Scanner also contains many online brute force password cracking modules. Read 28 reviews.
+
+Latest release: version 8.2 on June 16, 2016 (8 months ago).
+
+ Home icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Mouse icon  Magnifying glass icon pass-audit
+no rating Perl/Python/Ruby (#23, 3)
+
+While many canned security tools are available on this site for handling common tasks, scripting languages allow you to write your own (or modify existing ones) when you need something more custom. Quick, portable scripts can test, exploit, or even fix systems. Archives like CPAN are filled with modules such as Net::RawIP and protocol implementations to make your tasks even easier. Many security tools use scripting languages heavily for extensibility. For example Scapy interaction is through a Python interpreter, Metasploit modules are written in Ruby, and Nmap's scripting engine uses Lua. Review this tool.
+
+ Home icon  Home icon  Home icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Magnifying glass icon general
+(2)★★½ Paros proxy (#24, 8)
+
+Paros proxy logo
+A Java-based web proxy for assessing web application vulnerability. It supports editing/viewing HTTP/HTTPS messages on-the-fly to change items such as cookies and form fields. It includes a web traffic recorder, web spider, hash calculator, and a scanner for testing common web application attacks such as SQL injection and cross-site scripting. Read 4 reviews.
+
+Latest release: version 3.2.13 on Aug. 8, 2006 (10 years, 6 months ago).
+
+ Home icon  "Free" price tag icon  Linux penguin icon  OS X icon  Windows icon  Terminal window icon  Mouse icon  Magnifying glass icon web-proxy web-scanners
+(2)★★★★½ NetStumbler (#25, 7)
+
+NetStumbler logo
+Netstumbler is the best known Windows tool for finding open wireless access points ("wardriving"). They also distribute a WinCE version for PDAs and such named MiniStumbler. The tool is currently free but Windows-only and no source code is provided. It uses a more active approach to finding WAPs than passive sniffers such as Kismet or KisMAC. Read 3 reviews.
+
+Latest release: version 0.4.0 on April 1, 2004 (12 years, 10 months ago).
+
+ Home icon  Wikipedia icon  "Free" price tag icon  Windows icon  Mouse icon sniffers wireless
+(4)★★★★ Google (#26, 8)
+
+Google logo
+While it is far more than a security tool, Google's massive database is a gold mine for security researchers and penetration testers. You can use it to dig up information about a target company by using directives such as “site:target-domain.com” and find employee names, sensitive information that they wrongly thought was hidden, vulnerable software installations, and more. Similarly, when a bug is found in yet another popular webapp, Google can often provide a list of vulnerable servers worldwide within seconds. Check out the Google Hacking Database and Johnny Long's excellent book: Google Hacking for Penetration Testers. Read 4 reviews.

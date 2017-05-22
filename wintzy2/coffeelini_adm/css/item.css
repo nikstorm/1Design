@@ -1,0 +1,37 @@
+.item_img{
+display:inline-block;
+position:relative;
+width:220px;
+border-radius: 50%;
+margin-top:40px;
+margin-right:3%;
+border:5px solid #DADADA;
+}
+.item_icon_sett{
+position:relative;
+width:100%;
+text-align:center;
+top:40%;
+padding-left:4px;
+}
+.item_str_block{
+position:absolute;
+width:120px;
+height:30px;
+top:-40px;
+left:51px;
+}
+.str_item{
+font-size:30px;
+color:#ddd;
+cursor:pointer;
+}
+.str_item:hover{color:#0077e6;}
+.str_item_left{float:left;}
+.str_item_right{float:right;}
+.item_preload{
+position:absolute;
+right:45px;
+}
+
+

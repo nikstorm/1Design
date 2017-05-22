@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div id="app">
+		<form action="">
+			<button class="btn btn-success" v-on:click.prevent="onClick">Кнопка</button>
+		</form>
+		<input type="text" v-model="message" v-on:keyup.13="onGluck">
+		<input type="text" v-model="message" @keyup.13="onGluck">
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+	<script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script>
+	<script>
+		new Vue({
+			el:"#app",
+			data:{
+				message:''
+			},
+			methods:{
+				onClick: function (e) {
+					console.log('Wau');
+					//e.preventDefault()
+				},
+				onGluck: function(e){
+					console.log(this.message);
+				}
+			}
+		})
+	</script>
+</body>
+</html>

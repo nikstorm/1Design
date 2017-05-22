@@ -1,0 +1,35 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  width: 960px;
+  margin: 60px auto;
+  background-color: #000;
+  text-align: center;
+}
+.container{
+  margin-top: 200px;
+  background-color: #fff;
+  height: 500px;
+}
+
+}
+.tabs{
+  border:1px solid #00f;
+}
+.tab{
+  font-size: 1.5em;
+  margin-right: -4px;
+  background-color: rgba(0,0,0, .1);
+  cursor: pointer;}
+.wrapper .active {
+  color: red;
+  background-color: rgba(0,0,0, .3);
+ }
+.tab_item{
+  margin-top: 100px;
+  height: 500px;
+  color:#000;
+  background-color: #fff;
+}

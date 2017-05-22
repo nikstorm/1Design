@@ -1,0 +1,61 @@
+DirectoryIndex index.php
+RewriteEngine On
+AddDefaultCharset UTF-8
+
+# Основной домен
+RewriteCond %{HTTP_HOST} ^\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Защищаем наш .htaccess
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+ 
+# √лавна€
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^admin(/?)+$ coffeelini_admin4ik.php [L]
+RewriteRule ^exit(/?)+$ coffeelini_admin4ik.php?menu=exit [L]
+
+# Ajax 
+RewriteRule ^login(/?)+$ lokation.php?menu=login [L]
+RewriteRule ^dashboard(/?)+$ lokation.php?menu=dashboard [L]
+RewriteRule ^appearance(/?)+$ lokation.php?menu=appearance [L]
+RewriteRule ^contents(/?)+$ lokation.php?menu=contents [L]
+RewriteRule ^message(/?)+$ lokation.php?menu=message [L]
+RewriteRule ^settings(/?)+$ lokation.php?menu=settings [L]
+RewriteRule ^stats(/?)+$ lokation.php?menu=stats [L]
+# modules
+RewriteRule ^about(/?)+$ lokation.php?menu=about [L]
+RewriteRule ^contact(/?)+$ lokation.php?menu=contact [L]
+RewriteRule ^footer(/?)+$ lokation.php?menu=footer [L]
+RewriteRule ^header(/?)+$ lokation.php?menu=header [L]
+RewriteRule ^photos(/?)+$ lokation.php?menu=photos [L]
+RewriteRule ^team(/?)+$ lokation.php?menu=team [L]
+RewriteRule ^whatwe(/?)+$ lokation.php?menu=whatwe [L]
+RewriteRule ^icosave(/?)+$ lokation.php?menu=icosave [L]
+RewriteRule ^contsave(/?)+$ lokation.php?menu=contsave [L]
+RewriteRule ^customcode(/?)+$ lokation.php?menu=customcode [L]
+RewriteRule ^header_img_up(/?)+$ lokation.php?menu=header_img_up [L]
+RewriteRule ^header_set_post(/?)+$ lokation.php?menu=header_set_post [L]
+RewriteRule ^introduction_post(/?)+$ lokation.php?menu=introduction_post [L]
+RewriteRule ^portfolio_post(/?)+$ lokation.php?menu=portfolio_post [L]
+RewriteRule ^portfolioget([0-9]+)(/?)+$ lokation.php?menu=portfolio_get&line=$1 [L]
+RewriteRule ^portfolioimgup([0-9]+)(/?)+$ lokation.php?menu=portfolio_img_up&line=$1 [L]
+RewriteRule ^about_post(/?)+$ lokation.php?menu=about_post [L]
+RewriteRule ^aboutimgup([0-9]+)(/?)+$ lokation.php?menu=about_up_img&line=$1 [L]
+RewriteRule ^aboutget([0-9]+)(/?)+$ lokation.php?menu=about&line=$1 [L]
+RewriteRule ^itemget([0-9]+)(/?)+$ lokation.php?menu=team&line=$1 [L]
+RewriteRule ^item_content(/?)+$ lokation.php?menu=team&item_content=$1 [L]
+RewriteRule ^itemoutimgup([0-9]+)(/?)+$ lokation.php?menu=item_img_up&line=$1 [L]
+RewriteRule ^item_post(/?)+$ lokation.php?menu=item_post [L]
+RewriteRule ^contact_us_post(/?)+$ lokation.php?menu=contact_us_post [L]
+RewriteRule ^contact_us_up(/?)+$ lokation.php?menu=contact_us_img_up [L]
+RewriteRule ^aparance_post(/?)+$ lokation.php?menu=aparance_post [L]
+RewriteRule ^send(/?)+$ lokation.php?menu=send [L]
+RewriteRule ^portfo_dvig(/?)+$ lokation.php?menu=portfo_dvig [L]
+RewriteRule ^about_dvig(/?)+$ lokation.php?menu=about_dvig [L]
+
+
+
+

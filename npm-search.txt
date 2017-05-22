@@ -1,0 +1,514 @@
+NAME                      | DESCRIPTION          | AUTHOR          | DATE       | VERSION  | KEYWORDS                                                                                                                
+almost-static-site        | Single page app…     | =unkhz          | 2016-11-19 | 0.1.8    | spa static generator framework angular foundation sass documentation markdown yaml front-matter browserify commonjs gulp
+angular-auto-validate     | An automatic…        | =jonsamwell     | 2015-10-27 | 1.19.0   | angularjs validation bootstrap foundation
+angular-dynamic-routing   | Provides dynamic…    | =soumak77       | 2016-08-23 | 1.1.1    | foundation angular gulpfriendly
+angular-formly-templates- | Angular-Formly…      | =kentcdodds     | 2016-02-26 | 1.0.0-b… | 
+foundation                |                      |                 |            |          | 
+angular-foundation        | Angular components…  | =jbrowning      | 2015-10-13 | 0.8.0    | angular foundation
+angular-foundation-6      | ***                  | =circlingthesun | 2017-01-03 | 0.10.24  | 
+angular-foundation-ib     | angular-foundation…  | =alonp99        | 2016-07-10 | 0.8.0    | 
+angular-front-router      | Generate AngularJS…  | =soumak77       | 2016-08-10 | 1.1.1    | foundation angular gulpfriendly
+angular-gitkit            | An AngularJS module… | =krico          | 2015-05-14 | 0.0.1-0  | AngularJS GitKit Google Identity Toolkit OpenID OpenID Foundation
+angular-mm-foundation     | [![Build…            | =flobacher      | 2015-06-23 | 0.7.0-S… | 
+angular-mm-foundation-ib  | angular-foundation…  | =alonp99        | 2016-07-10 | 0.8.1    | 
+animated-orbit            | Add animate.css to…  | =nellaparedes   | 2015-11-19 | 1.0.2    | foundation animate.css
+apostrophe-snippets       | Reusable content…    | =alexgilbert…   | 2016-12-20 | 0.5.19   | snippets reuse content reuse content strategy apostrophe cms punkave
+ascli                     | A uniform…           | =dcode          | 2016-11-05 | 1.0.1    | ansi terminal colors ascii
+ashleshajs                | AshleshaJS is a…     | =akshar         | 2012-11-16 | 1.0.0    | NodeJS node YUI3 Express Bootstrap
+asperjs                   | Formerly known as…   | =aetiranos      | 2016-12-07 | 1.0.1    | bootstrap bootstrap2 bootstrap3 bootstrap4 foundation foundation5 foundation6 open framework open framework media queries query media gulp sass less scss responsive development tools tools CI
+asperjs-dev               | A developmental…     | =aetiranos      | 2016-12-07 | 0.0.4    | bootstrap bootstrap2 bootstrap3 bootstrap4 foundation foundation5 foundation6 open framework open framework media queries query media gulp sass less scss responsive development tools tools CI
+assemble-handlebars-3     | Static site…         | =ablackledge    | 2015-05-07 | 0.4.42   | HTML alternative blog boilerplate boilerplates bootstrap build builder components deployment front generator generators grunt gruntplugin handlebars handlebars-helper-eachitems helpers javascript jekyll matter node node.js pages partial partials scaffold scaffolds site static task templates templating website yaml yeoman
+atom-tfs                  | TFS Atom…            | =ivangabriele   | 2016-01-26 | 0.4.0    | tfs team foundation server microsoft
+atomicrecord              | Super lightweight…   | =ashleybrener   | 2015-02-12 | 0.1.9    | fdb foundationdb database nosql acid
+awayjs-core               | AwayJS core classes  | =80prozent…     | 2016-06-13 | 0.6.39   | 
+awayjs-display            | AwayJS displaylist…  | =80prozent…     | 2016-06-20 | 0.8.60   | 
+awayjs-dist               | Distribution build…  | =awayfoundation | 2014-11-05 | 0.2.0    | 
+awayjs-full               | Complete monolitic…  | =80prozent…     | 2016-12-08 | 0.2.37   | AwayJS WebGL 2D 3D graphics
+awayjs-lite               | Minimal monolitic…   | =awayfoundation | 2016-05-20 | 5.0.4    | AwayJS WebGL 2D 3D graphics
+awayjs-methodmaterials    | Method Materials…    | =awayfoundation… | 2016-05-25 | 0.3.20   | 
+awayjs-parsers            | Parsers for AwayJS   | =80prozent…     | 2016-06-13 | 0.5.36   | 
+awayjs-player             | Player for AwayJS    | =80prozent…     | 2016-05-27 | 0.5.16   | 
+awayjs-renderergl         | GL Renderer for…     | =awayfoundation… | 2016-06-13 | 0.8.37   | 
+awayjs-stagegl            | GL Stage for AwayJS  | =awayfoundation… | 2016-05-20 | 0.8.20   | 
+badgr-client              | client for the…      | =josmas…        | 2016-10-27 | 1.0.0    | badgr badges open badges paperbadger mozilla science lab science node
+base                      | base is the…         | =doowb…         | 2016-12-10 | 0.11.1   | framework api web mvc extensible micro
+base-apps-router          | Generate AngularJS…  | =soumak77       | 2016-09-23 | 1.2.5    | foundation angular gulpfriendly
+base-methods              | base-methods is the… | =antz29 =doowb… | 2016-01-12 | 0.6.2    | boilerplate cache del get inherit methods set starter unset visit
+basicgrid                 | A Foundation-like…   | =electerious    | 2016-11-25 | 2.0.1    | grid foundation column columns row rows responsive
+beardcomb                 | Hogan.js adapter…    | =sppericat      | 2015-03-25 | 0.4.1    | express.js hogan.js adapter foundation partials
+bedrock                   | A core foundation…   | =davidlehn…     | 2016-12-09 | 1.4.0    | 
+beez-foundation           | It is the basis for… | =fkei…          | 2015-06-01 | 0.9.7    | beez node static mock server jpegoptim optipng pngquant imagemagick development
+bestlang                  | Language parser…     | =aali…          | 2016-09-19 | 0.0.1    | 
+bff-lib                   | Basic Front-end…     | =oskargustafss… | 2016-05-24 | 0.5.1    | mvc model view controller extend events patch DOM
+billogram-foundation      | Billogram's visual…  | =mrydengren     | 2016-12-20 | 3.2.1    | 
+bixby-common              | Common components…   | =jaredhanson    | 2016-05-21 | 0.1.2    | components common core foundation framework
+broccoli-stew             | foundation of any…   | =caitp…         | 2016-10-10 | 1.4.0    | broccoli broccoli-plugin
+bugcore                   | bugcore is a…        | =airbug…        | 2016-02-15 | 0.3.27   | bugcore framework object oop
+bytepuhsers-common-js     | A collection of…     | =jaredramirez…  | 2016-03-13 | 0.0.22   | 
+bytepushers-common-js     | A collection of…     | =pouncilt       | 2016-05-11 | 0.0.0    | 
+bytepushers-js-core       | A collection of…     | =pouncilt       | 2016-09-29 | 0.0.69   | 
+calamarcopollo            | Save the chicken…    | =fczuardi       | 2016-09-29 | 0.10.9   | chatbot wit bus bus schedule telegram
+can-interchange           | A clone of…          | =macrofig       | 2016-03-08 | 0.0.2    | media query match interchange
+carmel-foundation-stack   | Carmel Foundation…   | =idancali       | 2016-11-04 | 0.2.6    | 
+cedar-roots               | Foundation code for… | =marcoms        | 2017-01-04 | 1.1.1    | 
+cm-scally                 | Campaign Monitor's…  | =chris__pearce  | 2015-09-30 | 0.2.0    | scally css oocss sass bem responsive
+cmbf2-core                | CMBF/2 SPI and core… | =jgrenon        | 2016-05-23 | 0.7.11   | micro-service enterprise typescript
+compass-boilerplate       | The foundation for…  | =sir-dunxalot   | 2016-01-09 | 0.1.2    | sass scss compass boilerplate css
+connect-foundationdb      | FoundationDB…        | =mmetral        | 2015-01-14 | 0.1.0    | connect foundationdb session express
+contentworkable           | A foundation for…    | =dubroy         | 2014-08-29 | 0.1.0    | contenteditable
+cordova-plugin-mfp        | IBM MobileFirst…     | =ibmmfpf        | 2016-12-07 | 8.0.201… | cordova ibm worklight mobilefirst mfp ecosystem:cordova cordova-android cordova-ios cordova-windows
+cordova-plugin-mfp-encryp | IBM MobileFirst…     | =ibmmfpf        | 2016-12-07 | 8.0.201… | cordova ibm worklight mobilefirst mfp encrypt ecosystem:cordova cordova-ios
+t-utils                   |                      |                 |            |          |                                                                            
+cordova-plugin-mfp-fips   | IBM MobileFirst…     | =ibmmfpf        | 2016-12-07 | 8.0.201… | cordova ibm worklight mobilefirst mfp fips ecosystem:cordova cordova-android cordova-ios
+cordova-plugin-mfp-jsonst | IBM MobileFirst…     | =ibmmfpf        | 2016-12-07 | 8.0.201… | cordova ibm worklight mobilefirst mfp jsonstore ecosystem:cordova cordova-android cordova-ios cordova-windows
+ore                       |                      |                 |            |          |                                                                                                              
+cordova-plugin-mfp-push   | Cordova Plugin for…  | =ibmmfpf        | 2016-12-07 | 8.0.201… | cordova ibm worklight mobilefirst mfp ecosystem:cordova cordova-android cordova-ios cordova-windows
+cordova-template-mfp      | MobileFirst…         | =ibmmfpf        | 2016-12-07 | 8.0.201… | ecosystem:phonegap ecosystem:cordova cordova:template phonegap:template
+cornerstone-js            | Cornerstone…         | =strd6          | 2013-11-11 | 0.3.2    | 
+cosy-grid                 | Building html for…   | =dervalp        | 2013-07-24 | 0.0.4    | 
+covistra-system           | Hapi plugin acting…  | =jgrenon        | 2016-04-07 | 0.8.3    | 
+create-react-icon         | convert one or…      | =envato-founda… | 2016-12-05 | 0.1.0    | svg react icon
+datatables.net-autofill-z | AutoFill for…        | =datatables     | 2016-12-06 | 2.1.3    | autofill excel DataTables jQuery table Foundation
+f                         |                      |                 |            |          |                                                  
+datatables.net-buttons-zf | Buttons for…         | =datatables     | 2016-12-16 | 1.2.4    | buttons excel pdf csv column visibility print DataTables jQuery table Foundation
+datatables.net-colreorder | ColReorder for…      | =datatables     | 2016-05-19 | 1.3.2    | reorder DataTables jQuery table Foundation
+-zf                       |                      |                 |            |          |                                           
+datatables.net-fixedcolum | FixedColumns for…    | =datatables     | 2016-05-20 | 3.2.2    | fixed columns DataTables jQuery table Foundation
+ns-zf                     |                      |                 |            |          |                                                 
+datatables.net-fixedheade | FixedHeader for…     | =datatables     | 2016-05-20 | 3.1.2    | fixed headers sticky DataTables jQuery table Foundation
+r-zf                      |                      |                 |            |          |                                                        
+datatables.net-keytable-z | KeyTable for…        | =datatables     | 2016-12-06 | 2.2.0    | spreadsheet excel keyboard DataTables jQuery table Foundation
+f                         |                      |                 |            |          |                                                              
+datatables.net-responsive | Responsive for…      | =datatables     | 2016-12-06 | 2.1.1    | responsive DataTables jQuery table Foundation
+-zf                       |                      |                 |            |          |                                              
+datatables.net-rowreorder | RowReorder for…      | =datatables     | 2016-12-06 | 1.2.0    | row reordering DataTables jQuery table Foundation
+-zf                       |                      |                 |            |          |                                                  
+datatables.net-scroller-z | Scroller for…        | =datatables     | 2016-05-19 | 1.4.2    | virtual scrolling DataTables jQuery table Foundation
+f                         |                      |                 |            |          |                                                     
+datatables.net-select-zf  | Select for…          | =datatables     | 2016-12-06 | 1.2.1    | select selection DataTables jQuery table Foundation
+datatables.net-zf         | DataTables for…      | =datatables     | 2016-12-30 | 1.10.13  | filter sort DataTables jQuery table Foundation
+debox-web-component       | component ui web…    | =nurdiansyah    | 2016-11-04 | 1.0.0    | ui component react bootstrap
+deepak                    | deepak has been…     | =ashleybrener   | 2015-01-26 | 0.1.2    | fdb foundationdb database nosql acid pack unpack
+devapt-features-foundatio | Devapt features for… | =lucbories      | 2016-07-17 | 1.0.0    | zurb foundation devapt renderer feature
+n6                        |                      |                 |            |          |                                        
+dosomething-neue          | This is…             | =dfurnes…       | 2015-07-23 | 6.4.11   | 
+dox-foundation            | HTML output for Dox… | =mattmcmanus    | 2014-01-09 | 0.5.6    | dox jsdox documentation docs dox
+dtsbundler-webpack-plugin | Generates a single…  | =awayfoundation | 2016-06-11 | 1.0.0    | typescript declaration bundling webpack
+dynamic-foundation        |                      | =langtutheky    | 2016-12-16 | 1.1.2    | 
+easy-query                | An easy to use,…     | =aetiranos      | 2016-07-22 | 1.1.7    | bootstrap bootstrap2 bootstrap3 bootstrap4 foundation foundation5 foundation6 open framework open framework media queries query media gulp sass scss responsive development tools tools CI
+ember-cli-foundation      | Include foundation…  | =kiwiupover     | 2016-06-19 | 0.0.2    | ember-addon foundation ember ember-cli
+ember-cli-foundation-6-sa | Foundation 6 SASS…   | =acoustep       | 2016-12-17 | 0.0.17   | ember-addon
+ss                        |                      |                 |            |          |            
+ember-cli-foundation-moda | A modal mixin for…   | =toranb…        | 2016-04-25 | 1.0.0    | ember-addon foundation modal ember
+l                         |                      |                 |            |          |                                   
+ember-cli-foundation-sass | Include Foundation…  | =globegitter…   | 2016-05-26 | 2.0.0    | ember-addon ember ember-cli foundation foundation-sass sass
+ember-cli-paint           | Foundation for…      | =arkham…        | 2016-06-10 | 1.13.11  | ember-addon
+ember-foundation          | Ember Addon for…     | =joshforisha    | 2015-06-15 | 0.7.2    | components ember-addon zurb foundation
+ember-foundation-apps     | An application port… | =tatemz         | 2015-03-26 | 0.0.3    | ember-addon Foundation ZURB responsive apps applications
+ember-foundation-sass     | foundation addon…    | =ajainvivek     | 2016-02-18 | 0.0.5    | ember-addon ember ember-cli foundation foundation-sass sass
+ember-foundation-sites    |                      |                 | 2015-11-24 |          | 
+ember-magma               | Magma is a…          | =alexmngn       | 2016-02-05 | 0.3.0    | ember-addon ember ember-cli bootstrap foundation paper components ui magma
+ember-pagination-ui       | Pagination…          | =seymac         | 2015-06-17 | 0.0.3    | ember-addon ember-pagination-ui pagination foundation-pagination
+ember-pricing-table       | Price table…         | =foxnewsnetwork | 2016-03-22 | 0.2.1    | ember-addon
+emujs                     | A responsiveness…    | =dumday         | 2016-06-14 | 1.0.3    | emu emujs emulate simulate javascript jquery mobile browser bootstrap foundation browser design screenshot responsive test
+engine.io                 | The realtime engine… | =darrachequesne… | 2017-01-02 | 1.8.2    | 
+engine.io-f               | The realtime engine… | =contra…        | 2016-04-08 | 0.1.0    | 
+engine.io-pure            | The realtime engine… | =johanneswuerb… | 2016-02-04 | 1.5.9    | 
+epsom                     | Express skeleton…    | =charleetm      | 2013-06-28 | 0.2.8    | epsom express framework sinatra web rest restful router app api ember mongoose
+eqcol                     | Equal effing columns | =awcross        | 2016-12-19 | 2.0.0    | equal columns row height browser bootstrap foundation match
+es2015-foundation-sites   |                      |                 | 2016-06-09 |          | 
+eslint-formatter-vso      | An ESLint formatter… | =bdukes         | 2016-08-08 | 0.1.0    | eslint formatter vso tfs vsts
+evolve-frame              | The Evolve Frame is… | =toddpi314      | 2015-11-24 | 0.0.0    | 
+evolveframe               | The Evolve Frame is… | =toddpi314      | 2015-11-24 | 0.0.0    | 
+extnode                   | Ext JS Foundation…   | =brunotavares   | 2011-12-23 | 4.1.0-b… | extjs class system
+f-remix                   | The Ultimate…        | =blu-jay        | 2016-03-07 | 0.1.11   | 
+fachwerk-f3               | Fachwerk foundation… | =fachw3rk       | 2016-07-11 | 1.0.2    | 
+fain                      | React components…    | =guzart         | 2016-12-25 | 0.8.0    | react react-components css-modules
+fashionista               | Apply themes to…     | =brian.lai      | 2013-06-04 | 0.3.4    | express connect foundation stylus theme
+fdboost                   | Performance…         | =ashleybrener   | 2015-02-12 | 0.1.10   | fdb foundationdb database nosql acid util
+ff-checkbox               | Theme-able checkbox… | =firefly-ui…    | 2016-06-06 | 1.0.0    | ember-addon
+ff-radio                  | Theme-able radio…    | =firefly-ui…    | 2016-06-06 | 1.0.0    | ember-addon
+ffdevices                 | List all available…  | =odegraciajr    | 2016-11-06 | 0.1.1    | ffmpeg dshow avfoundation gdigrab video4linux2 v4l2
+formalize                 | Node.js NoSQL…       | =ashleybrener   | 2014-09-11 | 0.1.18   | fdb foundationdb database nosql acid
+formvalidation            | The best jQuery…     | =niftylettuce   | 2016-12-04 | 0.6.2-d… | jQuery plugin validate validator form Bootstrap Foundation Pure SemanticUI UIKit
+found.scss                | foundational scss    | =calledt        | 2016-02-27 | 0.0.3    | scss mixin function normalize.css
+foundation                | You may also want…   | =brian.lai      | 2013-06-05 | 4.2.1-1  | zurb foundation stylus express
+foundation-apps           | A responsive,…       | =eddiedean…     | 2016-04-14 | 1.2.0    | Foundation ZURB responsive apps applications
+foundation-apps-material- |                      |                 | 2015-02-12 |          | 
+design                    |                      |                 |            |          | 
+foundation-apps-modal     | Zurb…                | =vinhnghi223    | 2016-06-15 | 0.1.5    | 
+foundation-apps-template  | App Name: Sample1    | =sarveshp89     | 2016-03-07 | 1.2.0    | 
+foundation-bem-grid       | Modern Sass BEM…     | =starise        | 2016-03-25 | 1.0.1    | css grid sass foundation
+foundation-breakpoints    | A simple plugin…     | =theblackbolt   | 2015-11-25 | 0.2.7    | foundation 6 foundation 5 breakpoints media queries matchmedia
+foundation-cli            | Command-line…        | =antjanus…      | 2016-10-11 | 2.1.0    | foundation cli scaffold
+foundation-components     | Additional UI…       | =dasch          | 2016-05-15 | 0.0.2    | 
+foundation-contextmenu    | Context Menu plugin… | =owlbertz       | 2016-10-07 | 0.0.6    | javascript menu foundation
+foundation-datepicker     | Foundation…          | =najlepsiwebde… | 2016-10-12 | 1.5.5    | 
+foundation-datepicker.js  | foundation-datepick… | =mzg            | 2016-10-20 | 1.0.0    | foundation-datepicker.js
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | token
+tokens                    |                      |                 |            |          |      
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | breakpoints
+tokens-breakpoints        |                      |                 |            |          |            
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | colors
+tokens-colors             |                      |                 |            |          |       
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | glyphs
+tokens-glyphs             |                      |                 |            |          |       
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | spacing
+tokens-spacing            |                      |                 |            |          |        
+foundation-design-system- | foundation design…   | =envato-founda… | 2016-11-02 | 0.1.0    | typography
+tokens-typography         |                      |                 |            |          |           
+foundation-emails         | A framework for…     | =kbal11…        | 2016-06-30 | 2.2.1    | responsive emails
+foundation-emails-templat | Basic template for…  | =evanhobbs…     | 2016-12-10 | 1.0.0    | 
+e                         |                      |                 |            |          | 
+foundation-for-react      |                      |                 | 2016-03-14 |          | 
+foundation-framework      |                      |                 | 2014-07-05 |          | 
+foundation-grid           | Just the grid from…  | =mikker         | 2015-04-21 | 0.1.0    | foundation grid scss
+foundation-icon-fonts     | foundation-icon-fon… | =jcherqui       | 2016-11-27 | 0.1.1    | foundation
+foundation-icon-fonts-3-g | Crawls the…          | =matiassingers  | 2014-09-24 | 0.2.1    | icons glyphs fonts foundation zurb
+lyphsearch-crawler        |                      |                 |            |          |                                   
+foundation-icons          | Foundation Icon…     | =patomation     | 2016-08-08 | 1.0.1    | 
+foundation-inline-svg     | Make it easy to…     | =kbal11         | 2016-11-28 | 0.0.1    | 
+foundation-jade           | A package to…        | =almielczarek   | 2016-05-27 | 0.3.7    | foundation jade
+foundation-js             |                      |                 | 2014-02-23 |          | 
+foundation-libsass-templa |                      |                 | 2015-05-29 |          | 
+te                        |                      |                 |            |          | 
+foundation-material       | Integrating…         | =akiran         | 2015-02-12 | 0.1.0    | Foundation for apps material design
+foundation-material-desig | Foundation Material… | =sirhodes       | 2016-08-25 | 1.0.0    | google material design
+n                         |                      |                 |            |          |                       
+foundation-npm-gulp       | Simple package to…   | =alucic         | 2015-09-01 | 1.0.0    | npm zurb foundation gulp
+foundation-nunjucks       | Template for…        | =satoru4kata    | 2016-08-10 | 1.0.6    | foundation 6 nunjucks sass scss
+foundation-remix          |                      |                 | 2016-02-28 |          | 
+foundation-sandboxed      | Custom Foundation…   | =radekstepan    | 2014-10-10 | 5.4.5-s… | foundation css prefix sandbox
+foundation-scss           |                      |                 | 2015-04-14 |          | 
+foundation-seed           |                      |                 | 2014-06-18 |          | 
+foundation-sites          | The most advanced…   | =arthurzurb…    | 2016-12-20 | 6.3.0    | eyeglass-module handlebars-helper-rel handlebars-helper-slugify
+foundation-sites-5        | **This package is…   | =dmackerman     | 2016-04-08 | 5.5.3    | handlebars-helper-rel handlebars-helper-slugify
+foundation-sites-loader   | foundation-sites…    | =vitalyrotari   | 2016-02-03 | 1.0.1    | foundation webpack sass
+foundation-sites-template | Basic template for…  | =thiagobako     | 2016-02-16 | 1.0.0    | 
+foundation-stylus         | Stylus plugin for…   | =latentflip     | 2014-01-27 | 0.9.1    | 
+foundation-theme-patience | >…                   | =brian.lai      | 2013-04-09 | 0.1.0    | 
+foundation-ui-framework   |                      |                 | 2016-04-26 |          | 
+foundation-ui-styles      | Baseline styling…    | =jlaswell       | 2016-07-12 | 1.0.7    | 
+foundation-ultimate       | The Ultimate…        | =blu-jay        | 2016-03-05 | 0.2.8    | framework responsive relution scss js angularJs foundation ultimate web apps responsive design angular
+foundation.css            | Compiled CSS of the… | =gsklee         | 2015-04-25 | 5.5.1    | foundation zurb css
+foundation.scss           | Zurb's Foundation 5… | =jimzhan        | 2015-04-14 | 5.5.1    | zurb foundation sass scss
+foundationdb-uniquename   | A simple module to…  | =mmetral        | 2015-02-04 | 0.1.5    | foundationdb web unique
+foundationpress           |                      |                 | 2015-10-10 |          | 
+foundations               | Foundations…         | =fmatar         | 2015-09-26 | 0.0.1    | 
+fowl                      | Document and Query…  | =manast         | 2014-06-01 | 0.1.0    | foundationdb object-modelling query
+fowler                    | Document and Query…  | =justmoon       | 2015-03-23 | 1.0.0    | foundationdb object-modelling query
+fremix                    | A fast, fluid &…     | =relutiondev    | 2016-06-22 | 1.2.0    | 
+front-router              | Generate AngularJS…  | =eddiedean…     | 2016-04-14 | 1.0.0    | foundation angular gulpfriendly
+ftechies                  | foundation…          | =amolc          | 2015-10-28 | 1.0.0    | js-mysql-framework
+gecko-ci                  | a lightweight build… | =minduca        | 2016-11-29 | 0.0.3    | gecko gecko-ci ci iot extreme feedback gadgets devices lifx tfs team foundation server
+generator-veams           | Scaffold modern…     | =sadscorn…      | 2017-01-04 | 7.6.0    | yeoman-generator app assemble mangony veams veams-js veams-sass veams-components veams-generator websites homepage gulp web apps prototype prototypes component front-end scaffold boilerplate templating backbone browserify es harmony javascript grunt
+generator-540-angular     | Yeoman generator…    | =ostranme       | 2016-03-22 | 1.0.3    | yeoman-generator angular gulp ui-router bootstrap angular-material foundation sass less
+generator-angular-boilerp | Angular-boilerplate… | =cminhho        | 2015-05-17 | 0.0.4    | angular-boilerplate yeoman-generator angular gulp restangular ui-router bootstrap foundation sass less es6 babel traceur typescript coffeescript jade haml webpack jshint
+late                      |                      |                 |            |          |                                                                                                                                                                          
+generator-angularjs-found | Yeoman generator     | =harrise        | 2015-03-01 | 0.0.1    | yeoman-generator
+ation                     |                      |                 |            |          |                 
+generator-ariane          | A highly…            | =hikingyo…      | 2016-12-15 | 0.1.7    | yeoman-generator web less scass bootstrap foundation gulp ecmascript6 html5bp modernizr babel
+generator-aspnet-xtianus  | Yeoman generator…    | =xtianus        | 2015-04-20 | 0.0.9    | yeoman-generator ASP.NET aspnet ASP net vNext foundation foundation5 zurb
+generator-assembly        | A Yeoman generator…  | =mykepreuss…    | 2015-06-23 | 0.0.9    | yeoman-generator LESS SASS SCSS Bootstrap Foundation RequireJS Modernizr Underscore jQuery Grunt Gruntfile HTML5 CSS3 Boilerplate
+generator-axyz            | Yeoman Generator…    | =axyz           | 2013-11-01 | 0.4.3    | yeoman-generator web app front-end h5bp modernizr foundation susy axyz
+generator-bakspace        | Yeoman generator…    | =idealbrandon   | 2014-06-11 | 0.1.3-c  | yeoman-generator scaffold framework front-end HTML5-BP HTML5 Boiler Plate Twitter Bootstrap Bootstrap Foundation Zurb Foundation Grunt SASS Less
+generator-bedrock         | Scaffolds out…       | =paramburu      | 2014-06-10 | 0.1.4    | yeoman-generator foundation zurb foundation5 font-awesome grunt
+generator-blueskyfish     | A yeoman generator…  | =blueskyfish    | 2015-08-03 | 0.0.2    | yeoman-generator blueskyfish angular foundation fontawesome
+generator-browserify      | Yeoman generator…    | =vincentmac     | 2014-09-30 | 0.4.1    | yeoman-generator generator browserify foundation zurb bootstrap commonjs cjs jade modernizr web app front-end gulp grunt
+generator-browserify-vers | Yeoman generator…    | =tapirdata      | 2016-08-26 | 2.1.0    | yeoman-generator scaffold commonjs browsersync browserify es6 es2015 express jade karma mocha chai backbone marionette bootstrap foundation modernizr sass gulp cache-crusher cache busting uglify
+atile                     |                      |                 |            |          |                                                                                                                                                                                                   
+generator-brunch-symfony  | Scaffolds a…         | =imanu          | 2016-01-08 | 1.3.0    | yeoman-generator brunch symfony bootstrap sass foundation knacss
+generator-cyrus           | A generator for…     | =902labs        | 2014-07-21 | 0.0.501  | yeoman-generator foundation
+generator-django-kaiju    | Yeoman generator…    | =mixxorz        | 2015-02-20 | 1.3.1    | yeoman-generator
+generator-docker-foundati |                      |                 | 2015-08-11 |          | 
+onpress                   |                      |                 |            |          | 
+generator-docker-foundati | A generator to get…  | =brah0um        | 2015-08-11 | 0.1.1    | yeoman-generator
+onpress-child             |                      |                 |            |          |                 
+generator-dummies         | A dummy generator -… | =plou           | 2016-05-18 | 2.2.3    | dummy dummysay front-end sass javascript automation ES2015 browserify babeljs jshint scss-lint grunt yeoman-generator
+generator-ee-foundation   | Scaffold out a…      | =niallobrien    | 2014-09-15 | 0.3.0    | yeoman-generator web app front-end h5bp jquery gulp foundation browsersync expression engine
+generator-efigence        | efigence.com simple… | =jchamicewicz   | 2016-02-24 | 0.5.1    | yeoman web app foundation jasmine boilerplate template gulp babel yuidoc kss sass
+generator-ember-config    | Ember Configurator…  | =kmandrup       | 2015-08-12 | 0.2.0    | yeoman-generator generator ember configurator config asset precompiler precompiler layout adapters setup firebase auth bootstrap foundation adddons sails full stack animations gestures blueprints components
+generator-ember-plugin    | Scaffold the…        | =glavin001      | 2014-06-09 | 0.1.2    | yeoman-generator
+generator-fe              | A generator for…     | =thommeo        | 2013-10-22 | 0.2.0    | yeoman-generator assemble bootstrap foundation
+generator-foundation      | Yeoman generator…    | =brian.lai      | 2013-04-29 | 0.5.0    | yeoman-generator yeoman generator stylus zurb foundation
+generator-foundation-apps | Yeoman generator -…  | =kleist         | 2014-12-26 | 0.0.3    | yeoman-generator
+generator-foundation-brow | Foundation,…         | =dougmacklin    | 2016-12-15 | 6.3.0-g2 | yeoman-generator
+serify                    |                      |                 |            |          |                 
+generator-foundation-ext  | Zurb Foundation 4.3… | =jamesakers     | 2013-09-04 | 0.2.4    | zurb foundation 4.3 yeoman generator scaffold framework coffeescript app
+generator-foundation-five | Yeoman generator…    | =bauschan       | 2014-05-23 | 0.1.0    | yeoman-generator scaffold foundation rwd zurb dalekjs
+generator-foundation-gulp | (This package has…   | =dougmacklin    | 2016-01-20 | 0.2.3    | yeoman-generator
+-browserify               |                      |                 |            |          |                 
+generator-foundation-gulp | Foundation, Sass,…   | =innovaticode   | 2015-12-17 | 0.1.6    | yeoman-generator
+-mustache                 |                      |                 |            |          |                 
+generator-foundation6     | Scaffold out a…      | =bassjobsen     | 2016-04-15 | 0.0.2    | yeoman-generator web app fundation foundation 6 front-end grunt
+generator-frontapp        | Yeoman generator…    | =ybenz          | 2015-04-02 | 0.1.6    | yeoman-generator
+generator-frontcow        | FrontCow is a…       | =bcabanes       | 2015-03-06 | 0.2.0    | sass frontend yeoman-generator atomic design sass foundation foundation5 atomic design bourbon polyfill font awesome
+generator-fullstack-backb | Scaffold out a…      | =pusongyang     | 2016-07-21 | 0.1.6    | yeoman-generator fullstack scaffold framework mvc backbone
+one                       |                      |                 |            |          |                                                           
+generator-gulp-angular    | Yeoman generator…    | =swiip =zckrs   | 2016-06-29 | 1.1.1    | yeoman-generator angular gulp restangular ui-router bootstrap angular-material foundation sass less es6 babel traceur typescript coffeescript jade haml webpack eslint
+generator-gulp-angular-pr | Yeoman generator…    | =pregiotek      | 2016-07-06 | 1.1.3    | yeoman-generator angular gulp restangular ui-router bootstrap angular-material foundation sass less es6 babel traceur typescript coffeescript jade haml webpack eslint
+egiotek                   |                      |                 |            |          |                                                                                                                                                                       
+generator-gulp-foundation | Scaffold out a…      | =niallobrien    | 2014-05-27 | 0.0.3    | yeoman-generator web app front-end h5bp modernizr jquery gulp foundation browsersync
+generator-gulp-foundation | Yeoman generator…    | =leolik         | 2016-09-28 | 0.1.0    | yeoman-generator generator foundation ink zurb email responsive html jade sass inline
+-emails                   |                      |                 |            |          |                                                                                      
+generator-gulp-foundation | Gulp, Foundation,…   | =bsodmike       | 2016-01-25 | 0.1.1    | yeoman-generator
+-sass-babel-browserify    |                      |                 |            |          |                 
+generator-jeti            | A Yeoman generator…  | =zatomik        | 2016-04-23 | 1.0.21   | yeoman-generator Jekyll Foundation Gulp SCSS
+generator-jumper          | A Yeoman generator…  | =lancedikson    | 2014-03-29 | 0.1.6    | yeoman-generator jumper-generator generator-jumper web frontend yeoman foundation bootstrap generator yo scaffolding
+generator-lb              | Lighting Beetle…     | =adam.mockor    | 2016-11-10 | 4.0.1    | yeoman-generator web app front-end h5bp modernizr jquery gulp jade sass bootstrap foundation lb
+generator-md              | Mauricio Dulce…      | =mdulce         | 2015-05-12 | 2.0.0-b… | yeoman-generator web app front-end h5bp modernizr jquery gulp jade sass bootstrap foundation lb
+generator-microcebus      | Generate a…          | =micjamking     | 2016-10-03 | 0.2.2    | yeoman-generator web app WordPress Foundation grunt
+generator-moonraft-boiler | A generator for…     | =bhaskargyan…   | 2016-01-12 | 0.0.5    | yeoman-generator moonraft angular gulp restangular ui-router bootstrap angular-material foundation sass less es6 babel traceur typescript coffeescript jade haml webpack eslint
+plate                     |                      |                 |            |          |                                                                                                                                                                                
+generator-ng-panes        | Yo generator for…    | =joelchu        | 2016-11-29 | 1.6.6    | angularjs yeoman generator bootstrap uikit amazeui semantic-ui angular-material materialize panes panesjs panes.js node node.js foundation yeoman-generator
+generator-ng-ss           | Yeoman generator…    | =dovchar…       | 2015-07-13 | 0.1.4    | yeoman-generator angular gulp restangular ui-router bootstrap angular-material foundation sass less es6 babel traceur typescript coffeescript jade haml webpack jshint
+generator-origin-craft    | Yeoman generator…    | =megatrond      | 2016-09-20 | 1.2.4    | browserify craftcms foundation generator gulp yeoman yeoman-generator
+generator-p4              | Yeoman generator…    | =williambeto    | 2016-11-20 | 0.2.2    | yeoman-generator foundation 6 zurb foundation zurb foundation 6 sass scss libsass grunt browsersync responsive front-end framework
+generator-patternlab-foun |                      |                 | 2015-05-28 |          | 
+dation                    |                      |                 |            |          | 
+generator-postroch        | Front-End generator… | =christianroch… | 2015-02-21 | 1.1.0    | yeoman-generator foundation compass autoprefixer imagemin concat uglify jshint clean connect livereload
+generator-prototype       | Scaffold modern…     | =sebastian-fit… | 2015-08-25 | 0.5.11   | yeoman-generator assemble web apps prototype prototypes component front-end scaffold boilerplate templating backbone grunt
+generator-pxa-frontend    | Frontend generator…  | =dmh            | 2014-01-24 | 0.0.12   | pxa-frontend pxa
+generator-ractive-foundat | Yeoman generator…    | =ivan.wills     | 2016-06-01 | 0.1.2    | yeoman-generator ractive-foundation ractive foundation
+ion                       |                      |                 |            |          |                                                       
+generator-react-foundatio | Generator for…       | =akiran         | 2015-01-06 | 0.2.0    | yeoman-generator
+n-apps                    |                      |                 |            |          |                 
+generator-scratch         | Starter theme…       | =mrdink         | 2016-12-20 | 0.2.1    | yeoman-generator wordpress theme front-end grunt starter theme _s underscores sass foundation
+generator-shackstack      | Accessible…          | =bshack         | 2016-04-04 | 2.0.15   | accessibility backbone browserify browsersync foundation gulp handlebars jasmine jquery modernizr karma scss yeoman-generator shackstack
+generator-spontaneous-com | Yeoman generator…    | =janbaykara     | 2014-10-24 | 0.3.0    | yeoman-generator
+bustion                   |                      |                 |            |          |                 
+generator-stamp           | Yeoman Generator…    | =kyledetella    | 2013-10-01 | 0.9.6    | yeoman-generator amd requirejs foundation backbone scaffold grunt handlebars
+generator-surprise        | Yeoman Generator…    | =rmknecht…      | 2016-07-25 | 1.0.3    | yeoman-generator surprise highway front-end js html5 bootstrap bourbon foundation gulp
+generator-tfs             | Generates an app…    | =darquewarrior  | 2017-01-03 | 0.1.1    | yeoman-generator tfs Team Services Visual Studio DevOps RubDevOpsOnIt Blackshirt
+generator-veams           | Scaffold modern…     | =sadscorn…      | 2017-01-04 | 7.6.0    | yeoman-generator app assemble mangony veams veams-js veams-sass veams-components veams-generator websites homepage gulp web apps prototype prototypes component front-end scaffold boilerplate templating backbone browserify es harmony javascript grunt
+generator-wave            | Yeoman generator…    | =nodox          | 2016-06-23 | 1.0.0    | yeoman-generator angular gulp restangular ui-router bootstrap angular-material foundation sass less es6 babel traceur typescript coffeescript jade haml webpack eslint hapi mongodb
+generator-webapp-scaffold | Web app scaffold…    | =itonyyo        | 2015-04-28 | 1.0.16   | yeoman-generator generator-webapp-scaffold modern webapps mobile webapp desktop webapp responsive webapp scaffold web app front-end react.js handlebars.js ember.js angular.js backbone.js modernizr.js html5shiv.js respond.js jquery webpack require.js browserify h5bp zurb foundation twitter bootstrap gulp grunt
+generator-webpack-versati | Yeoman generator…    | =tapirdata      | 2016-10-02 | 3.1.1    | yeoman-generator scaffold commonjs browsersync webpack es6 es2015 express pug karma mocha chai backbone marionette bootstrap foundation modernizr sass gulp cache-crusher cache busting uglify
+le                        |                      |                 |            |          |                                                                                                                                                                                               
+generator-zf-smacss       | Yeoman generator…    | =horacio        | 2014-06-07 | 0.1.2    | yeoman-generator smacss scaffold fullstack foundation bower front-end
+generator-zf5             | Yeoman generator…    | =juliancwirko   | 2015-10-07 | 1.0.0    | yeoman-generator foundation5 zurb foundation sass scss
+generator-zf5-vs          | Yeoman generator…    | =xtianus        | 2015-03-18 | 0.0.10   | yeoman-generator foundation5 zurb foundation visual-studio asp.net
+generator-zf5plus         | Yeoman generator…    | =tomeralmog     | 2014-12-30 | 0.1.1    | yeoman-generator foundation5 zurb foundation zf5 zf5plus Owl Carousel Threejs fabric bourbon fontawesome spritespin
+generator-zurb-foundation | Yeoman generator…    | =bauschan       | 2013-11-26 | 0.3.5    | yeoman-generator scaffold foundation rwd zurb dalekjs
+gijgo                     | Gijgo is a set of…   | =atatanasov     | 2016-10-29 | 1.0.0    | jquery grid gijgo javascript plugin datagrid table dialog modal draggable droppable tree
+gijgo-combined            | Gijgo is a set of…   | =atatanasov     | 2016-10-29 | 1.0.0    | jquery grid gijgo javascript plugin datagrid table dialog modal draggable droppable tree
+gijgo-modular             | Gijgo is a set of…   | =atatanasov     | 2016-10-29 | 1.0.0    | jquery grid gijgo javascript plugin datagrid table dialog modal draggable droppable tree
+grunt-assemble            | Static site…         | =doowb…         | 2016-09-06 | 0.5.0    | HTML alternative blog boilerplate boilerplates bootstrap build builder components deployment front generator generators grunt gruntplugin handlebars handlebars-helper-eachitems helpers javascript jekyll matter node node.js pages partial partials scaffold scaffolds site static task templates templating website yaml yeoman
+grunt-assemble-zrh        | Static site…         | =zurichversich… | 2016-06-15 | 0.3.2    | HTML alternative blog boilerplate boilerplates bootstrap build builder components deployment front generator generators grunt gruntplugin handlebars handlebars-helper-eachitems helpers javascript jekyll matter node node.js pages partial partials scaffold scaffolds site static task templates templating website yaml yeoman
+grunt-init-foundation-sit | Start project for…   | =robfree        | 2016-09-14 | 0.0.2    | autoprefixer css prefix postcss postcss-plugin foundation foundation sites 6 init template front-end
+es6                       |                      |                 |            |          |                                                                                                     
+grunt-inky                | A grunt plugin for…  | =miw0           | 2016-08-25 | 0.2.1    | grunt task inky zurb foundation email responsive
+grunt-sandbox-css         | Sandbox a CSS…       | =radekstepan    | 2016-02-20 | 0.6.0    | css prefix sandbox gruntplugin foundation bootstrap
+grunt-tfs-unlock          | Grunt.js plugin to…  | =danactive      | 2016-05-15 | 0.4.0    | gruntplugin
+gulp-dox-foundation       | Gulp plugin to…      | =tracker1       | 2014-06-27 | 0.0.0    | gulp-plugin dox dox-foundation
+gulp-ractive-foundation   | Gulp plugin for…     | =ivan.wills     | 2016-08-15 | 0.0.1    | ractive foundation ractive-foundation gulp
+gulp-tfs                  | gulp plugin for…     | =junyiz         | 2017-01-03 | 0.0.9    | gulp tfs
+gulp-tfs-fp               | gulp plugin for…     | =frontui        | 2016-04-26 | 1.0.0    | gulp tfs
+headlight-node-sdk        | Headlight - App…     | =jasonhillier…  | 2016-11-28 | 2.1.32   | 
+hod-foundation            | An Express-based…    | =daniel-ac-mar… | 2015-11-02 | 0.0.3    | forms .gov.uk GovUK
+hubot-github-tfs          | A Hubot script to…   | =helaili        | 2016-06-10 | 0.9.4    | hubot hubot-scripts tfs
+humix-sense               | Foundation for…      | =jeffffrey      | 2016-12-28 | 1.1.1    | 
+ibm-mfp-web-sdk           | IBM MobileFirst…     | =ibmmfpf        | 2016-12-07 | 8.0.201… | ibm worklight mobilefirst mfp web sdk cordova-web
+ie8-js                    | ie8 js fix for…      | =seeliang       | 2015-06-12 | 0.1.2    | ie ie8 css3 js fix
+igniter-react-component   | An archetype for…    | =zapollo82      | 2016-05-12 | 1.0.0    | component lint test coverage boilerplate foundation blueprint archetype mocha eslint karma webpack react
+inky                      | Convert a simple…    | =eddiedean…     | 2016-09-02 | 1.3.7    | ink foundation email template
+inspiration-architect     | A thin foundation…   | =shaunpersad    | 2016-05-14 | 0.0.4    | app application express musejs inspirationjs providers config
+iotclient                 | This iotClient…      | =amitmangalved… | 2015-06-29 | 0.2.4    | iotcloud
+irls-audio-aligner-interf | Interface module to… | =chadananda     | 2016-12-31 | 1.0.5    | audio align ffa firm-foundation ocean
+ace                       |                      |                 |            |          |                                      
+itc-foundation            | ITC application…     | =itc            | 2016-11-14 | 0.2.2    | language oop events container
+jasonraimondi-foundation- |                      |                 | 2016-06-08 |          | 
+sites                     |                      |                 |            |          | 
+jekyll-foundation         | Starting point for…  | =asaf.algawi    | 2016-03-13 | 0.2.1    | 
+jekyll-starter            | A a file-based CMS,… | =sirthxalot     | 2016-10-02 | 2.0.0    | Jekyll CMS Foundation
+jquery-eqcol              | Equal effing…        | =awcross        | 2016-10-07 | 1.0.0    | equal columns row height browser bootstrap foundation match jquery
+jscs-reporter-vso         | A JSCS reporter for… | =bdukes         | 2016-08-09 | 0.1.0    | jscs reporter vso tfs vsts
+json-object-editor        | JOE the Json Object… | =craql          | 2016-12-16 | 0.8.182  | joe json editor
+jsonresume-theme-zurb     | JSON Resume…         | =davidengland   | 2016-10-17 | 0.2.0    | jsonresume json resume theme zurb foundation cv
+kermit                    | Infrastructure for…  | =a-z            | 2016-06-30 | 2.2.0    | soa service manager infrastructure service oriented architecture application framework foundation config services microservice kermit
+kibu                      | Kibu (Foundation):…  | =davidglivar    | 2013-10-18 | 0.0.23   | 
+kingsroad                 | Customizing theme…   | =rayfields      | 2016-04-27 | 0.1.0    | html css foundation
+koa-better-router         | Stable and lovely…   | =tunnckocore    | 2016-10-22 | 2.0.1    | better betterstack easy flexible get koa koajs match matcher matching middleware params path pathmatch plugin post power powerful rest restful route router routing stack
+kotsu                     | Clean, opinionated…  | =armordarks…    | 2016-12-22 | 1.3.1    | app boilerplate build continuous deployment es2015 es6 front-end generator gettext grunt i18n jspm l10n nunjucks sass scaffold sprites generator stack standard static site generator template tool web webfont generator website
+kp-toolkit                | *Note: It was…       | =kostaspt       | 2016-02-29 | 0.1.0    | sass margin spacer foundation
+lambda-foundation         | Common helpers for…  | =henri…         | 2016-12-30 | 3.0.0    | lambda microservice
+langmap                   | List of all the…     | =aali…          | 2016-11-14 | 0.0.14   | locales map languages list l10n localization world native language English language list of languages
+laravel-elixir-mail-proce | Take Foundation for… | =xavrsl         | 2016-12-13 | 1.0.6    | laravel elixir email foundation inky
+ssor                      |                      |                 |            |          |                                     
+leus                      | webpack and gulp…    | =asthesky       | 2016-05-06 | 0.1.0    | webpack gulp foundation
+lineman-foundation        | This is a plugin to… | =6qat           | 2014-09-29 | 0.1.12   | lineman linemanplugin foundation css sass
+login.webmaker.org        | login.webmaker.org…  | =cadecairos…    | 2016-09-13 | 1.0.33   | 
+lumen-foundation-apps     | 'React port of…      | =tackyshot      | 2015-08-06 | 0.7.0    | react foundation-apps modal panel accordion tabs offcanvas interchange notification actionsheet react-component
+lumenode-foundation       |                      | =ykrevnyi       | 2016-02-29 | 1.1.6    | 
+made-responsive-toolkit   | Responsive…          | =spuriouslyawa… | 2016-12-16 | 2.6.3    | 
+magento-boilerplate       | A boilerplate…       | =webcomm        | 2016-08-05 | 3.0.0-a… | 
+makeapi                   | MakeAPI for Webmaker | =cadecairos…    | 2016-09-13 | 0.2.0    | 
+makeapi-client            | MakeAPI client…      | =cadecairos…    | 2016-09-13 | 0.5.30   | 
+makedrive                 | Webmaker Filesystem  | =aali…          | 2016-09-13 | 0.0.69   | filesystem storage web makedrive webmaker cloud
+makedrive-client          | Webmaker…            | =aali…          | 2016-09-13 | 0.0.25   | filesystem storage web makedrive webmaker cloud
+material-foundation       | Material design for… | =d0whc3r        | 2017-01-02 | 0.0.5    | material-design material design foundation zerb
+me_foundation             | A Foundation…        | =saswat307      | 2016-07-26 | 1.0.3    | 
+media-queries             | CSS media queries…   | =rafaelrinaldi  | 2016-06-22 | 1.0.5    | breakpoints css defaults media-queries style
+metaljs                   | A solid foundation…  | =eduardolundgr… | 2015-06-03 | 0.1.7    | javascript library
+mikser-inky               | Zurb foundation…     | =dimitarkolev   | 2016-09-21 | 1.1.0    | 
+minibase                  | Minimalist…          | =tunnckocore    | 2016-12-05 | 1.0.1    | app app-base application apps async base baseplugin basic boilerplate callback cb core corebase define elegance foundation kickstart main methods micro microbase mini minibase minimal minimalist nano nanobase node nodejs plugin plugins small smart smart-plugins starter starterkit sync synchronous use
+modal.css                 | A simple css…        | =williamanders… | 2016-02-12 | 0.2.0    | modal css
+mofo-bootstrap            | Mozilla…             | =gvn…           | 2016-11-08 | 2.0.1    | bootstrap mozilla css sass theme
+mofo-localize             | All the little…      | =alanmoo…       | 2016-09-13 | 1.0.0    | localization l10n
+mofo-style                | A Javascript style…  | =gvn…           | 2016-09-15 | 2.4.0    | style guide lint MoFo Mozilla
+mofo-ui                   | React component…     | =gvn…           | 2016-09-15 | 1.6.0    | 
+moment-picker-foundation  | A datepicker based…  | =ideaplexus     | 2016-12-30 | 0.3.0    | 
+mozmaker                  | Mozilla…             | =gvn            | 2016-06-21 | 0.8.0    | bootstrap mozilla css sass theme
+mumsy-foundation          | A generator to…      | =matthewstewart | 2015-12-02 | 0.1.1    | mumsy express generator passport mongoose handlebars foundation
+mumsy-model               | A command line…      | =matthewstewart | 2015-12-03 | 0.1.0    | mumsy express generator passport mongoose handlebars foundation
+native-sound-player       | Simple sound player… | =ukatama        | 2016-08-30 | 0.1.1    | sound media-foundation mediafoundation native audio
+ne-server                 | A simple Tool to…    | =node-engine    | 2015-10-30 | 1.8.4    | NodeJS ExpressJS
+ng2-foundation            | angular2 foundation… | =tzuyangni      | 2016-12-01 | 0.0.4    | angular2 foundation angularjs
+nightshade                | CSS framework…       | =inca           | 2016-09-20 | 0.1.8    | css
+node_foundationdblayers   | Layers for…          | =agad           | 2013-03-19 | 0.0.3    | foundationdb database client
+node-capitalwords         | A node wrapper…      | =tcamara        | 2016-10-12 | 1.0.0    | capital words capital sunlight foundation sunlight labs sunlight congress political api node
+node-foundation-sass      | Foundation 5         | =imnicosuarez   | 2015-02-22 | 0.0.4    | zurb foundation sass
+node-foundtion-sass       | Foundation 5         | =imnicosuarez   | 2015-02-09 | 0.0.1    | zurb foundation sass
+node-humix                | Foundation for…      | =jeffffrey      | 2015-06-01 | 0.1.0    | 
+node-humix-sense          | Foundation for…      | =jeffffrey      | 2016-12-28 | 1.0.0    | humix sensor
+node-red-contrib-ibmiotap | THIS NODE IS…        | =amitmangalved… | 2015-07-06 | 0.3.9-D… | node-red bluemix iotcloud
+p                         |                      |                 |            |          |                          
+node-red-contrib-opcua    | A Node-RED node to…  | =biancode…      | 2016-11-21 | 0.2.11   | node-red OPC UA opc-ua unified automation opc foundation node-opcua
+nova-base                 | Foundation for Nova… | =credo          | 2016-12-13 | 0.7.5    | nova action framework
+npm-foundation            |                      |                 | 2014-07-05 |          | 
+object-foundation         | simple framework…    | =miguel_fontes  | 2016-01-27 | 0.1.3    | 
+oink-cli                  | Kickstart your…      | =martinemmert   | 2016-01-29 | 0.0.2    | javascript webapp development foundation grunt node bower
+omnia-foundation          | package TypeScript…  | =omnia          | 2016-07-22 | 1.0.4    | omnia
+one-sass-toolkit          | A collection of…     | =onedesign      | 2016-11-17 | 0.4.0    | sass css styles one design company
+open.core                 | Common utility…      | =philcockfield  | 2012-12-02 | 0.1.209  | utility core foundation library common
+openbadges-validator      | openbadges…          | =brianloveswor… | 2016-09-13 | 1.1.1    | openbadges validation
+ore                       | Foundations for…     | =joehewitt      | 2014-05-12 | 0.0.10   | 
+osx-audio                 | Access to Mac OS X…  | =fardog         | 2016-05-14 | 1.0.0    | audio coreaudio sound recording input stream osx corefoundation
+osx-dialog                | Creates a dialog to… | =wraithan       | 2014-10-07 | 1.0.0    | dialog osx corefoundation
+outset-stylus             | Minimal,…            | =riccardoscalco | 2015-04-28 | 1.0.0    | boilerplate front-end minimal
+pact-node                 | A wrapper for the…   | =mboudreau      | 2016-06-14 | 1.3.8    | pact node wrapper mock service
+pageman                   | A preprocessor for…  | =pmkary         | 2016-08-09 | 1.2.0    | pageman kary foundation html markdown legend jekyll
+panza                     | a foundation for…    | =bmcmahen       | 2016-07-25 | 2.3.0    | react-native widgets ui bootstrap foundation forms
+patsy                     | A CLI based build…   | =phun-ky        | 2015-04-02 | 0.2.13-… | gruntjs node javascript css jshint minify handlebars mustache concat templating templates proxy frontend build system framework routing recess uglify dox-foundation grunt qunit nodeunit reload reloadr reloading bake test testing
+pebble-cpp                | Pebble Foundation…   | =wvenable       | 2016-07-10 | 0.1.0    | pebble-package
+persevere-example-wiki    | This is an example…  | =dojofoundation | 2013-10-14 | 0.2.5    | 
+perstore                  | Perstore is a…       | =dojofoundation | 2013-09-25 | 0.3.3    | persistence object store persevere
+pintura                   | JSGI-based RESTful…  | =dojofoundation | 2016-01-20 | 0.3.10   | rest database web json persevere
+plate-model               | React-Redux site…    | =hcchien        | 2016-12-21 | 1.0.16   | 
+polywurl                  | polywurl is a…       | =rcolebaugh     | 2016-06-28 | 0.1.0    | bootstrap foundation css translator
+pontoon-to-json           | A build-step cli…    | =alanmoo…       | 2016-09-13 | 2.0.0    | Pontoon l10n .properties
+preventis-style           | stylesheet…          | =guidoschmidt   | 2016-12-14 | 0.0.2    | style preventis css
+preventis-stylesheet      | stylesheet…          | =guidoschmidt   | 2016-12-21 | 1.0.0    | 
+product-thumb             | Generates the…       | =vdevigere      | 2015-12-15 | 1.0.2    | 
+pubsweet-backend          | [![build…            | =jure           | 2016-11-16 | 0.5.0    | 
+pubsweet-frontend         | [![build…            | =jure           | 2016-12-21 | 0.7.0    | 
+ractive-foundation        | Ractive components…  | =macclesoft     | 2016-08-04 | 0.21.0   | 
+react-foundation          | Foundation as React… | =crisu83…       | 2016-09-14 | 0.7.0    | badge button callout video grid icon label media-object menu progress-bar responsive switch top-bar react foundation react-component
+react-foundation-apps     | 'React port of…      | =akiran         | 2015-05-15 | 0.6.1    | react foundation-apps modal panel accordion tabs offcanvas interchange notification actionsheet react-component
+react-foundation-componen | Foundation Sites…    | =aruberto       | 2016-09-21 | 0.12.0   | react foundation foundation-sites css-modules react-component
+ts                        |                      |                 |            |          |                                                              
+react-foundation-docs     |                      |                 | 2016-03-15 |          | 
+react-foundation-for-site |                      |                 | 2016-03-14 |          | 
+s                         |                      |                 |            |          | 
+react-foundation-lib      | A library of…        | =ryanwade       | 2016-11-17 | 0.0.6    | 
+react-foundation-menudrop | A menu dropdown      | =numso          | 2014-11-25 | 1.0.0    | 
+down                      |                      |                 |            |          | 
+react-foundation-modals   |                      |                 | 2015-09-10 |          | 
+react-foundation-sites    | "React port of…      | =akiran         | 2014-12-01 | 0.0.1    | React foundation
+react-foundation-sites-6  | React Components…    | =mpohja         | 2016-01-16 | 0.0.6    | React Foundation
+react-html-document       | A foundational…      | =xavierelopez   | 2016-09-14 | 3.1.0    | react html-document server rendering html server isomorphic universal jsx
+react-zurb-foundation     | Foundation 6…        | =anthonybrend   | 2016-02-03 | 0.0.1    | react ecosystem-react react-component zurb zurb-foundation foundation
+regular-state             | an SPA(single page…  | =leeluolee      | 2016-07-12 | 0.2.1    | stateman regularjs state spa
+requirify-foundation-foun |                      |                 | 2014-09-01 |          | 
+dation                    |                      |                 |            |          | 
+Resin                     | Admin CSS…           | =themarkappleby | 2016-06-20 | 0.0.14   | CMS admin
+responsive-bootstrap-tool | Responsive…          | =rogovdm        | 2016-05-21 | 0.0.1    | 
+kit-rogovdm               |                      |                 |            |          | 
+responsive-equalized-heig | An intuitive,…       | =jsmreese       | 2014-12-04 | 1.0.0    | zurb foundation equal equalize equalized height heights
+hts                       |                      |                 |            |          |                                                        
+responsive-toolkit        | Responsive…          | =maciejgurban   | 2016-06-21 | 2.6.3    | 
+responsivewebframework    | Jalasoft Foundation… | =luissiles      | 2015-07-14 | 2.0.0    | 
+retyped-foundation-sites- | TypeScript typings…  | =retyped        | 2016-01-31 | 6.1.1-0  | retyped tsd tsd-ambient
+tsd-ambient               |                      |                 |            |          |                        
+retyped-foundation-tsd-am | TypeScript typings…  | =retyped        | 2016-01-31 | 5.5.1-0  | retyped tsd tsd-ambient
+bient                     |                      |                 |            |          |                        
+rework-struct             | Rework preprocessor… | =queckezz       | 2014-01-24 | 0.3.1    | struct ui minimal ui base component groundwork foundation component rework
+rib                       | CoffeeScript…        | =panta          | 2012-03-07 | 0.0.2    | coffeescript library framework toolbelt utility
+righteous                 | Kary Foundation…     | =pmkary         | 2016-09-01 | 1.1.3    | 
+righteous-core            | Kary Foundation…     | =pmkary         | 2016-09-02 | 1.5.2    | 
+rnw-wpf-test              | React Native…        | =gantman        | 2016-12-16 | 0.1.0    | 
+rock                      | Generate and…        | =jprichardson…  | 2016-11-03 | 0.4.0    | rock foundation skeleton generate template scaffold
+sails-fdb                 | a FoundationDB…      | =foundationdb   | 2014-09-10 | 0.10.4   | postgresql orm waterline sails
+sails-generate-foundation | Generates grunt…     | =megakoresh     | 2016-03-25 | 1.0.5    | foundation generator sails generate plugin
+sassy-helpers             | Useful sass mixins   | =marvinhagemei… | 2016-10-23 | 1.2.0    | sass scss mixins bootstrap foundation
+savjs                     | savjs (Store Action… | =jetiny         | 2016-11-22 | 0.0.1    | 
+scally                    | Scally is a Sass,…   | =chris__pearce  | 2015-09-07 | 2.10.1   | scally css oocss sass bem responsive
+server-foundation         |                      |                 | 2013-11-28 |          | 
+service-model             | An object oriented…  | =artifacthealth | 2016-11-05 | 0.2.29   | service wcf rest rpc decorators typescript
+shell-csslib              | A powerful,…         | =chris__pearce  | 2016-12-16 | 2.0.0    | shell css library sass bem responsive
+sixteen                   | SASS foundation for… | =guillaumepiot  | 2016-12-30 | 0.2.5    | sass bem
+slush-foundation          | Slush generator for… | =jonkemp        | 2014-11-03 | 1.0.2    | slushgenerator web app front-end foundation gulp
+slush-jekyll-webpack-foun | Sush generator for…  | =thiagopaixao   | 2016-10-17 | 0.1.0    | slushgenerator jekyll webpack foundation static website
+dation                    |                      |                 |            |          |                                                        
+slush-kickstart           | A slush generator…   | =mohamdio       | 2016-03-30 | 1.0.3    | slushgenerator gulp foundation bootstrap sass nunjucks browser-sync front-end web app
+slush-web-kickstart       | A slush generator…   | =michtio        | 2016-04-19 | 0.5.1    | slushgenerator gulp foundation bootstrap materialize mdl sass nunjucks browser-sync front-end web app
+software.bytepushers.comm | A collection of…     | =pouncilt       | 2015-11-28 | 0.0.6    | 
+on-js                     |                      |                 |            |          | 
+solar-stellarorg          | Stellar Development… | =irisli…        | 2016-03-23 | 0.2.0    | 
+soulmates_foundation_base | tars+foundation+bem  | =eddy.lazar     | 2015-12-15 | 1.0.3    | 
+srvoa                     | Infrastructure for…  | =a-z            | 2015-10-27 | 1.3.2    | soa service manager infrastructure service oriented architecture application framework foundation config services
+stasis                    | Opinionated,…        | =hoch           | 2014-12-29 | 0.0.12   | static site generator blog foundation sass dustjs nodejs javascript
+stateman                  | A tiny foundation…   | =leeluolee      | 2015-09-28 | 0.2.0    | router state spa
+structure-js              | A class based…       | =ccheney…       | 2016-12-27 | 0.14.9   | structure structurejs structure-js javascript typescript actionscript
+stylie                    | Stylie is a…         | =yawetse        | 2015-08-05 | 2.0.1    | typesettin bootstrap foundation css generator less css framework minimal flat ui
+sunlight-congress-api     | A simple wrapper…    | =mcwhittemore   | 2015-03-12 | 0.3.1    | api congress sunlight foundation sunlight labs open government
+superfly-css-foundation   | Extensions /…        | =ole.ersoy      | 2016-06-14 | 0.0.4    | css superfly-css resets standards style
+tangojs-framework         | tangojs foundations  | =adriatik.dush… | 2015-10-22 | 1.0.0    | tangojs-framework
+templify                  | A simple template…   | =dojofoundation | 2016-01-20 | 0.9.1    | template persevere
+tfs                       | NodeJS wrapper for…  | =ivangabriele   | 2016-03-06 | 1.4.2    | tfs team foundation server wrapper
+tfs-unlock                | Windows Team…        | =danactive      | 2016-05-15 | 0.5.0    | 
+tfsjs                     | Windows Team…        | =su9er          | 2014-08-21 | 0.1.0    | tfs node npm
+tfx-cli                   | CLI for Visual…      | =vsonline       | 2016-12-09 | 0.3.45   | 
+theme-karyfoundation-them | Two very carefully…  | =pmkary         | 2016-11-22 | 8.0.0    | 
+es                        |                      |                 |            |          | 
+themex                    | The altimate…        | =pmkary         | 2016-11-22 | 0.0.5    | Color Themes Syntaxt Themes Color Schemes Visual Studio Code Code Atom Sublime Kary Foundation
+thicket                   | Foundational…        | =maseb          | 2015-03-12 | 1.2.1    | 
+threads-foundation        | Foundation for the…  | =dfmcphee       | 2016-07-09 | 0.0.3    | 
+trifecta                  | A bad and…           | =lukejanicke    | 2016-01-05 | 2.0.0    | css reset framework foundation
+twreporter-react          | React-Redux site…    | =twreporter     | 2016-08-30 | 1.0.15   | 
+viur-css                  | This is the first…   | =phsieben       | 2016-08-24 | 1.0.3    | VIUR CSS framework vicss
+voidcanvas                | An npm command line… | =metalshan      | 2016-07-17 | 1.1.1    | voidcanvas node-foundation
+von-app                   | Foundation…          | =wangdahoo      | 2016-10-31 | 0.1.3    | 
+vscode-tfs                | TFS Visual Studio…   | =ivangabriele   | 2016-03-07 | 0.5.2    | tfs team foundation server microsoft
+vue-foundation            | A Vue.js project     | =idevent…       | 2016-09-30 | 0.1.0    | 
+vue-foundation-components |                      |                 | 2016-08-23 |          | 
+vulcangrid                | Zurb Foundation…     | =romelperez     | 2016-11-12 | 1.0.0    | Foundation Zurb React Grid
+web-foundation            | reusable web…        | =drdelambre     | 2016-12-12 | 1.28.1   | 
+webarranco_starter        | This package…        | =webarranco     | 2016-04-06 | 1.0.8    | 
+webmaker-auth             | Express middleware…  | =cadecairos…    | 2016-09-13 | 1.0.5    | 
+webmaker-auth-client      | This is the…         | =cadecairos…    | 2016-09-13 | 0.2.8    | 
+webmaker-i18n             | Webmaker…            | =aali…          | 2016-11-14 | 0.3.31   | webmaker
+webmaker-login-ux         | Extendable library…  | =cadecairos…    | 2016-09-13 | 1.3.7    | 
+webmaker-mailroom         | This module outputs… | =aali…          | 2016-12-06 | 2.0.4    | 
+webmaker-postalservice    | Delivering…          | =cadecairos…    | 2016-09-13 | 0.3.11   | webmaker
+webmaker-user-client      | Utility functions…   | =cadecairos…    | 2016-09-13 | 0.1.2    | 
+win-tfs                   | Windows Team…        | =suprsidr       | 2016-01-28 | 1.0.1    | TFS
+windows.foundation        | Use the…             | =nadavbar       | 2015-02-17 | 0.1.7    | Windows.Foundation Windows Foundation WwwFormUrlDecoder IWwwFormUrlDecoderEntry WwwFormUrlDecoderEntry IGetActivationFactory PropertyValue IStringable IAsyncInfo IAsyncAction Uri IPropertyValue PropertyType AsyncStatus NodeRT WinRT Microsoft
+windows.foundation.collec | Use the…             | =nadavbar       | 2014-10-10 | 0.1.6    | Windows.Foundation.Collections Windows Foundation Collections IVectorChangedEventArgs IPropertySet PropertySet CollectionChange NodeRT WinRT Microsoft
+tions                     |                      |                 |            |          |                                                                                                                                                       
+windows.foundation.diagno | Use the…             | =nadavbar       | 2014-10-10 | 0.1.6    | Windows.Foundation.Diagnostics Windows Foundation Diagnostics TracingStatusChangedEventArgs AsyncCausalityTracer IErrorReportingSettings RuntimeBrokerErrorSettings ILoggingChannel LoggingChannel LoggingActivity ILoggingSession LoggingSession LogFileGeneratedEventArgs IFileLoggingSession FileLoggingSession CausalityTraceLevel CausalitySource CausalityRelation CausalitySynchronousWork ErrorOptions LoggingLevel NodeRT WinRT Microsoft
+stics                     |                      |                 |            |          |                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+wo-foundation             | Lab project of Gulp  | =mind0n         | 2016-10-06 | 1.0.4    | 
+wordpress-tab-plugin-html | HTML and CSS tests…  | =rhernando      | 2016-05-22 | 1.1.0    | wordpress tabs plugin html css foundation
+-test                     |                      |                 |            |          |                                          
+workflow-4-node           | Workflow 4 Node is…  | =unbornchikken  | 2015-12-08 | 0.17.0   | workflow statemachine stateful development developmenttool
+wysknd-lib                | Common library…      | =vamship        | 2015-05-06 | 0.0.2    | node libraries
+yeoman-foundation         | Yeoman generator…    | =vincentmac     | 2013-02-09 | 0.2.4    | yeoman foundation generator cli tool development
+yeoman-meteor             | A structured yeoman… | =doubleu23      | 2014-01-20 | 0.0.5    | yeoman-generator meteor subgenerators scaffolding sass foundation
+yug-foundation            | a simple basic lib…  | =sandon         | 2015-11-29 | 0.0.2    | modularization componentization
+zurb-foundation           | The most advanced…   | =elm232         | 2013-06-27 | 4.2.3    | ZURB foundation responsive framework grid
+zurb-foundation-5         | Foundation 5 for…    | =cethy          | 2014-11-13 | 5.4.7    | zurb foundation
+zurb-foundation-npm       | A simple and stock…  | =jdillon522     | 2014-03-13 | 0.0.1    | 
+zurb-foundation-scss-npm  | Zurb's Foundation 5… | =jackcompton    | 2014-08-03 | 0.0.1    | 
+zurb.foundation           |                      |                 | 2015-01-22 |          | 
+zurb.foundation.css       |                      |                 | 2015-01-22 |          | 

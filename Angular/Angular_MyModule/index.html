@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="vieport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="myApp.js" type="text/javascript">
+		
+	</script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	{{2+3}}
+	<div ng-controller="MyCtrl1">
+		<input type="text" ng-model="myFactory.hello">
+		<input type="text" ng-model="sum">
+		{{today | date:"dd/MM/yyyy"}}
+		<ul></ul>
+			<li ng-repeat="x in names">
+				{{x.a}}
+			</li>
+			<a href="" ng-click="myFunc();">dsfdfsfsfs</a>
+			{{hell}}
+	</div> dsf&#0822;
+	<div ng-controller="MyCtrl2">
+		<input type="text" ng-model="myFactory.hello">
+	</div>
+</body>
+</html>

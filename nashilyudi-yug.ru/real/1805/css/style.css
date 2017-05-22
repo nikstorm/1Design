@@ -1,0 +1,70 @@
+input[type="submit"]{
+    background-color: #ffee58!important;
+    border: 0!important;
+    text-wrap: wrap!important;
+    line-height: 22px!important; 
+    padding-top: 30px;
+    font-size: 24px !important;
+    // color:red!important;
+}
+input[type="submit"]:hover{
+    background-color: #ffd83b!important;
+}
+input[type="submit"]:focus{
+    // background-color: #0f0!important;
+}
+input[type="submit"]#xx{
+    // font-weight: bold !important;
+    // color:red!important;
+    
+}
+.get{
+    font-size: 24px !important;
+    font-weight: normal !important;
+}
+.wide{
+    width: 1600px!important;
+}
+
+.cons:hover{
+    // display: inline-block !important;
+    display: inline-block !important;
+    border: 1px solid green!important;
+    background-color: red!important;
+    color: #888!important;
+    
+}
+.cons:active{
+    // background-color: blue!important;
+    // color: #00d83b!important;
+}
+.mobileBtn:hover{
+    display: block !important;
+    background-color: #ffd83b!important;
+}
+.mobileBtn:focus{
+    // display: block !important;
+    // background-color: #0f0!important;
+}
+.xxx:hover{
+    background-color: #ffd83b !important;
+}
+.xxx:active{
+    // display: inline-block !important;
+    // background-color: #0f0!important;
+}
+span .callGift{
+    display: inline-block !important;
+    background-color: #ffee58!important;
+    border: 0!important;
+    text-wrap: wrap!important;
+    line-height: 22px!important; 
+    padding-top: 30px;
+    font-size: 24px !important;
+}
+span .yellow:hover{
+    color: red!important;
+}
+body{
+  padding-right: 0 !important;
+}

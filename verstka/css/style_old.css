@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document by GA */
+
+ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,img {margin: 0; padding: 0; border: 0;}
+html {font-family: Arial, Helvetica, sans-serif; color: #444; background: url(../img/header_bg.png) center top repeat-x #022b4d;}
+body {font-size: 12px;}
+a:hover {text-decoration: none;}
+
+#header {height: 80px; position: relative; overflow: hidden; margin: 0 auto; width: 950px; background-color: #FFF; padding: 30px;}
+
+.logo {position: absolute; top: 30px; background: url(../img/logo.png) no-repeat; width: 354px; height: 82px; text-indent: -9999px;}
+
+.top_button {position: absolute; right: 30px; top: 50px;}
+.top_button img {margin: 5px 0 0 20px;}
+.top_button a {font-size: 18px; font-weight: 700; color: #004474; text-decoration: none; width: 110px; background-position: left; background-repeat: no-repeat; display: block; padding: 5px 5px 5px 50px; margin-right: 10px; float: left;}
+.top_button a#tb_1 {background-image: url(../img/tb_1_bg.png);}
+.top_button a#tb_2 {background-image: url(../img/tb_2_bg.png);}
+
+#content {padding: 10px 30px; margin: 0 auto; width: 950px; background: #FFF url(../img/content_bg.png) top repeat-x; overflow: hidden; color: #4b5966;}
+
+.menu {list-style: none; width: 970px; display: table; border-radius: 5px; background: url(../img/menu_bg.jpg) repeat-x; margin-bottom: 35px;}
+.menu li {display: table-cell; position: relative; border-left: 1px solid #00668b;}
+.menu li:first-child {border-left: none;}
+.menu li a {display: block; padding: 15px 3px; color: #adcfd5; font-size: 16px; text-decoration: none; text-align: center;}
+.menu li a:hover, .menu li a.current {color: #FFF;}
+/*.menu li ul {list-style: none; padding-top: 0; position: absolute; width: 175px;}
+.menu ul li a, .menu ul li a:hover, .menu ul li a.current {display: block; padding: 10px 15px; font-size: 12px; text-align: left; color: #FFF; width: 145px;}
+.menu li ul {display: none;}
+.menu li:hover ul {display: block; border: 1px solid #cdcac7;}
+.menu ul li, .menu ul li:hover, .menu ul li.current {display: block; background: #375a84; border-top: 1px solid #FFF; margin: 0;}
+.menu ul li:first-child {border: none; background: #375a84;}
+.menu ul li:hover a, .menu ul li.current a {color: #FFF; text-decoration: underline; background: #375a84;}
+.menu ul ul {margin-left: 175px; margin-top: -20px;}
+.menu ul ul li {display: none;}
+.menu ul ul li a, .menu ul li:hover ul li a {text-decoration: none;}
+.menu ul ul li a:hover, .menu ul li:hover ul li a.current {text-decoration: underline !important;}
+.menu ul li:hover ul li {display: block;} 
+.menu ul li:hover a ul, .menu ul li.current a ul {display: block;}*/
+
+#main {padding-bottom: 430px;}
+
+.left_col {width: 200px; float: left;}
+
+.about {text-align: center;}
+.about a {font-weight: 700; text-decoration: none; color: #4b5966;}
+.about img {margin-bottom: 40px;}
+
+.center_col {padding: 0 30px; overflow: hidden; float: left; width: 445px;}
+.center_col h1 {font-size: 16px; margin-bottom: 15px;}
+.center_col p {margin-bottom: 12px; font-size: 13px; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.right_col {width: 240px; float: right; position: relative;}
+.right_col h6 {font-size: 30px; color: #f36221; margin-bottom: 20px;}
+
+.right_menu {margin-bottom: 30px;}
+.right_menu a {font-size: 16px; font-weight: 700; color: #004474; text-decoration: none; width: 200px; background-position: left; background-repeat: no-repeat; display: block; padding: 10px 5px 5px 40px; margin-bottom: 5px; min-height: 25px;}
+.right_menu a#rca_1 {background-image: url(../img/icon_1.png);}
+.right_menu a#rca_2 {background-image: url(../img/icon_2.png);}
+.right_menu a#rca_3 {background-image: url(../img/icon_3.png);}
+.right_menu a#rca_4 {background-image: url(../img/icon_4.png);}
+.right_menu a#rca_5 {background-image: url(../img/icon_5.png);}
+
+.adt {padding: 20px; background-color: #eef5fa; border: 1px solid #c0dbe6;}
+.adt strong {color: #335d82; font-size: 20px; display: block; margin-bottom: 10px;}
+.adt a {color: #5e5e5e; font-size: 13px; text-decoration: none; font-weight: 700; display: block; margin-top: 10px;}
+.adt span {color: #858585; display: block;}
+
+.doctors {position: absolute; bottom: 0; z-index: 10; width: 164px; height: 350px; background: url(../img/doctors.png) no-repeat;}
+
+.tng {width: 910px; border: 1px solid #dad2be; padding: 20px; margin: -415px auto 60px;}
+.tng h6 {color: #5e5e5e; font-size: 18px; font-weight: 700; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; margin-bottom: 15px;}
+.tng ul {display: inline-block; vertical-align: top; width: 300px; margin-right: 55px;}
+.tng ul li {margin-bottom: 5px; list-style-image: url(../img/tng_li.png); margin-left: 15px;}
+
+#footer {background-color: #FFF; margin: 0 auto; width: 950px; padding: 0 30px; font-size: 12px; color: #4a585a;}
+.footer_menu {list-style: none; width: 970px; display: table; border-radius: 3px; background-color: #e2e5ea; margin-bottom: 20px;}
+.footer_menu li {display: table-cell; position: relative;}
+.footer_menu li a {display: block; padding: 20px 3px; color: #4a585a; font-size: 14px; text-decoration: none; text-align: center; font-weight: 700;}
+.footer_menu li a:hover, .footer_menu li a.current {text-decoration: underline;}
+
+.copy {float: left;}
+.created {float: right;}
+.created a {text-decoration: none; color: #4a585a;}

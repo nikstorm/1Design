@@ -1,0 +1,63 @@
+
+<tag v-model="property">
+new Vue({
+	el:'ssaas',
+	data:{
+	property: ''
+	}
+})
+Фильтры
+<ul>
+	<li v-for="item in array | orderBy 'name' 'age'">{{item.name}}, {{item.age}}</li> выводим список из массива и упорядочиваем
+</ul>
+
+new Vue({
+		el:"#app",
+		data: {
+			array:[
+				{
+					name:'derr',
+					age:345
+				},
+				{
+					name:'hgfh',
+					age:4498
+				}
+			]
+		}
+	})
+
+<input type="text" v-model='inxut' autofocus>
+
+<ul>
+			<li v-for="item in array | filterBy inxut">{{item.name}}, {{item.age}}</li> выводим список из массива и фильтруем
+</ul>	
+
+
+el:"#app",
+		data: {
+			inxut:'',	
+				array:[
+					{
+						name:'derr',
+						age:345
+					}
+					
+Вычисляемые свойства
+	<form action="">
+			<span>{{count}} / 30</span> 	выводим сколько символов введено
+			<textarea v-model="text"></textarea>
+			<button v-if="count <= 30">Отправить</button>  кнопка исчезает если больше 30
+		</form>
+
+new Vue({
+		el:"#app",
+		data:{
+			text:''
+		},
+		computed:{
+			count:function(){
+				return this.text.length
+			}
+		}
+	})		

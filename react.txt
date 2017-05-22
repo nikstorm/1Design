@@ -1,0 +1,40 @@
+<body>
+	<div id="content"></div>
+	<script type="text/babel">
+		var HelloWorld = React.createClass({
+		render: function(){
+			return(<h1>Hello, {this.props.act}!</h1>); !!!! act 
+		}
+		});
+
+		ReactDOM.render(
+			<div> !!!! Всегда оборачивать HelloWorld в один элемент разетки например div
+				<HelloWorld act="aaa"/> !!!! actmkmn              
+				
+			</div>
+			,
+			document.getElementById('content')
+		);
+	</script>  
+
+
+	<script src="react-15.3.0.js" type="text/javascript"></script>
+	<script src="react-dom-15.3.0.js" type="text/javascript"></script>
+	<script src="browser.js" type="text/javascript"></script>
+	
+Инициализация компонента
+	1)GetDefaultProps значения параметров по-умолчанию 
+	2)GetInitialState первоначальное значение состояния компонента
+	3)componentWillMount
+	4)render
+	5)componentDidMount - здесь можно взаимодействовать с jquery или событиями браузера
+	
+	
+	inline-стили
+		backgroundColor:this.props.color где background-color(пишется через camelCase) 
+		color - [
+					{
+						id:0,
+						text:"Lorem ipsfdssdfdsfdsfsfddgdgfhg cumque vel doloremque laborum. Quaerat nulla eum in, ullam adipisci veritatis.",
+					!!!! 	color:"#ff0000"
+					}

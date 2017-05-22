@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Списки</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="app">
+		<ul>
+			<li v-for="bear in bears" :class="{'strike':bear.status}">{{bear.name}}</li> 
+			<!-- v-bind:class можно заменить на :class -->
+		</ul>
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+	<script>
+		new Vue({
+			el:'#app',
+			data:{
+			bears: [
+			{
+				name:'Гризли',
+				status:false
+			},
+			{
+				name:'Белый',
+				status:false
+			},
+			{
+				name:'Панда',
+				status:true
+			},
+			{
+				name:'Кадьякский',
+				status:false
+			}
+			]
+		}
+		})
+
+	</script>
+	<!-- <script type="text/javascript" src="bower_components/vue/dist/vue.min.js"></script> -->
+</body>
+</html>

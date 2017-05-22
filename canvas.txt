@@ -1,0 +1,13 @@
+<canvas id="my" width="300" height="300"></canvas>
+
+<script>
+	var c = document.getElementById("my");
+	var ctx = c.getContext("2d);
+	
+	ctx.moveTo(0,20); - задаем начальную точку
+	ctx.lineTo(100,100);
+	ctx.strokeStyle = "#ffff00"; - цвет линии
+	ctx.stroke(); - рисуем
+	ctx.font = "30px Arial";
+	ctx.fillText("Hello World",50,50); - пишем текст
+</script>

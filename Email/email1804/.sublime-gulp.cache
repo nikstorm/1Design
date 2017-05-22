@@ -1,0 +1,1 @@
+{"D:\\1Design\\Email\\newsletter-video-tut-master\\gulpfile.js":{"sha1":"dd5ca88772622e955cccac77c83704da0ac8746c","tasks":{"styles":{"name":"styles","dependencies":""},"inky":{"name":"inky","dependencies":"styles"},"default":{"name":"default","dependencies":""}}}}

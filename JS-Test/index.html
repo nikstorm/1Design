@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+	<div class="content">
+		
+	<button id="tbl">Создать таблицу</button>	
+	</div>
+<script src="jquery-3.0.0.min.js" type="text/javascript"></script>
+<script>
+	var addTable = function(){
+		$('.content').append("<table></table>");
+			
+			$('table').css("border","1px solid #0f0").css('width','100%').append('<tr><td>dssadsa</td></tr>');
+	};
+	var addRow = function(){
+		$('table').append
+	};
+	$(document).ready(function(){
+		$("#tbl").on('click', 'addTable');
+		
+	});
+</script>	
+</body>
+</html>

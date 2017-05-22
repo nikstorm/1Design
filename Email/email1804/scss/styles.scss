@@ -1,0 +1,281 @@
+@import "foundation";
+
+@font-face{
+  font-family: 'Century Gothic Bold';
+  src: url("http://nikstorm.ru/fonts/CenturyGothicBold.ttf") format("TrueType");
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.no-bg {
+  background: transparent !important;
+}
+
+.custom-pb {
+  padding-bottom: 10px !important;
+}
+
+.tiny-text {
+  font-size: 12px;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.basic-link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.main-sub-heading {
+  color: $grey;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 22px;
+}
+
+.main-body-p {
+  color: $grey;
+  line-height: (22/14);
+}
+
+.decorative-line {
+  background: $grey;
+  height: 2px;
+}
+
+.item-name {
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.item-price {
+  color: $grey;
+}
+
+table.button {
+  margin-bottom: 0;
+  table {
+    td {
+      padding: map-get($button-padding, default);
+      a {
+        padding: 0px;
+      }
+    }
+  }
+}
+@font-face {
+  font-family: 'CenturyGothicBold';
+  src: url('../fonts/CenturyGothicBold.ttf') format("truetype");
+  font-weight: bold;
+  font-size: 28px
+}
+.black{
+  background-color: #000;
+  height: 262px;
+  }
+.contacts{
+  font-family: 'Century Gothic';
+  font-weight: 500;
+  color: #F1F0F0;
+  font-size: 14px;
+  margin-top: 5px;
+  
+  span{
+    color: #c61d1d;
+  }
+  .wh{
+    color: #f1f0f0;
+  }
+}
+.quality{
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.get{
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 37px;
+  color: #c61d1d;
+  margin-top: 15px;
+}
+
+.white{
+  background-color: #fff;
+
+}
+.quot{
+  h1{
+    font-family: 'Century Gothic';
+    color: #171515;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: left;
+  }
+  p{
+    font-family: 'Century Gothic';
+    color: #171515;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+}
+.site{
+  h1{
+    font-family: 'Century Gothic';
+    color: #171515;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: left;
+    margin-left: 10px;
+    span{
+      color: #c61d1d;
+    }
+  }
+  p{
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+}
+.works{
+  h3{
+    color: #c61d1d;
+    text-decoration: underline;
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    margin-left: -20px;
+  }
+}
+.img{
+   // margin-left: 370px;
+}
+.tech{
+  p{
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    span{
+      font-weight: bold;
+      color: #c61d1d;
+      font-style: normal;
+    }
+  }
+}
+.answers{
+  
+  p{
+    font-family: 'Century Gothic';
+    font-size: 14px;
+    color: #171515;
+  }
+  span{
+      font-family: 'Century Gothic';
+      font-size: 14px;
+      color: #171515;
+    
+      
+      i{
+        color: #c61d1d;
+        font-weight: bold;
+      }
+   }
+}
+.clients{
+  h1{
+    font-family: 'Century Gothic';
+    color: #171515;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+.clients2{
+  img{
+    float: left;
+    // display: inline-block;
+    overflow: hidden;
+  }
+  h1{
+    margin-top: 15px;
+    display: inline-block;
+    font-family: 'Century Gothic';
+    color: #c61d1d;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+.social{
+  p{
+   font-family: 'Century Gothic';
+   font-size: 14px;
+   font-weight: normal;
+   color: #171515;
+   text-align: center;
+
+  }
+  .icons{
+    margin-left: 15px;
+    img{
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: middle;
+    
+    }
+    
+  }
+}
+
+button[href]{
+  color: $button-color;
+  font-family: 'Century Gothic'!important;
+  font-weight: $button-font-weight;
+  background-color: $button-background;
+  border: $button-border;
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  margin: -40px!important;
+  overflow: hidden;
+  font-size: 18px;
+ 
+}
+button.button2{
+  color: $button-color;
+  font-family: 'Century Gothic'!important;
+  font-weight: $button-font-weight;
+  background-color: $button-background;
+  border: $button-border;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100px;
+  margin-left: 100px;
+  overflow: hidden;
+  font-size: 18px;
+
+
+}

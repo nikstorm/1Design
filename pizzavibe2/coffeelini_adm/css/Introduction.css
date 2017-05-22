@@ -1,0 +1,44 @@
+.item_ico1{
+position:relative;
+width:100%;
+color: #545454;
+font-size:50px;
+}
+.item_ico{
+position:relative;
+color: #545454;
+width:70px;
+height:50px;
+padding:15px;
+font-size:50px;
+border-radius:5px;
+background: #ddd;
+border: 1px solid #ddd;
+}
+.podnat_ico{
+position:relative;
+margin-top:-120px;
+}
+.icon_vibor{
+width:50px;
+display:inline-table;
+margin-bottom:10px;
+cursor:pointer!Important;
+}
+.icon_vibor:hover{
+color: #0077e6;
+}
+.vnutri_blok_rec_head{
+position:relative;
+z-index:1;
+padding:10px;
+font-size:25px;
+border-radius:5px;
+background: #FFF;
+border: 1px solid #ddd;
+max-width:97%;
+max-height:180px;
+overflow-x:hidden;
+overflow-y: scroll;
+margin-left:10px;
+}

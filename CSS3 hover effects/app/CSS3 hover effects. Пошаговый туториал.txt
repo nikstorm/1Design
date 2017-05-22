@@ -1,0 +1,1483 @@
+CSS3 hover effects. Пошаговый туториал из песочницы tutorial
+HTML*, CSS*
+При создании этого мануала, моей целью было взять три десятка различных эффектов, частью — довольно распространенных, частью — придуманных мной, разместить их от простых к более сложным, и на их примере показать новичкам, никогда не имевшим дело с CSS3 возможностями, как эти возможности работают и как их применить на практике. Именно по этой причине статья вышла подробная, пошаговая, мне было важно описать и разобрать каждую деталь. 
+
+Демо материалы лежат здесь.
+
+Предупреждение: эффекты работают только в современных браузерах, поддерживающих возможности CSS3.
+
+Подготовка к работе.
+
+Итак, для того, чтобы создавать наши эффекты нам понадобится вот такая простая дефолтная html-структура:
+
+<div class="effect>
+  <img src="img/ef1.jpg" alt="Effect #1" />
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>
+
+
+Для большей части эффектов она останется неизменна, но кое-где нам придется внести ряд изменений. У нас есть div-контейнер с классом .effect, внутри которого помещаем картинку и контейнер с классом .caption, содержащий заголовок, описание и, как в данном случае, кнопку “View More”. Разумеется, структуру менять можно, главное, тогда сделать соответствующие изменения и для CSS-кода.
+
+Дефолтные css-стили для нашей структуры (опять же, в зависимости от того, какой мы будем рассматривать эффект, они будут различаться): 
+
+.effect {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.effect img {
+  width: 100%;
+  height: 100%;
+}
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.effect .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+}
+
+Основы свойства transition. Эффекты #1.1-1.3
+
+
+Пример
+
+Эффект #1.1 заключается в том, что, при наведении мыши на изображение, сверху “выезжает” контейнер .caption с информацией.
+
+Чтобы этого добиться, нужно, в первую очередь, переместить этот контейнер выше, за пределы контейнера с эффектом. Для этого мы изменим ему свойство top, и стили для блока теперь будут выглядеть так:
+
+ .effect .caption {
+   position: absolute;
+   top: -100%; 
+   left: 0px;
+   background: rgba(0,0,0,0.7);
+   width: 100%;
+   height: 100%;
+   color: #fff;
+}
+
+Следующим шагом будет добавление к .caption свойства transition. transition показывает, какое именно свойство будет изменяться, насколько быстро, с какой задержкой. 
+
+Рассмотрим его поподробнее. Вот так должно будет выглядеть свойство transition для эффекта #1.1:
+
+transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+
+Первое значение устанавливает имя стилевого свойства, которое будет отслеживаться для изменения. В данном случае мы выставили all — отслеживаться будут все свойства. Второе — отвечает за время, необходимое для анимации. Третье — за то, как в течение времени, заданного вторым свойством, будет распределяться скорость перехода: где замедлится, где ускорится. Так, например, в данном случае сначала анимация будет быстрее, к середине замедлится и ближе к концу выйдет на равномерную скорость. Четвертое значение определяет, начнется анимация с задержкой или нет. Если значение равно 0s — задержки нет. 
+
+Кроме того, для этого свойства нам надо будет добавить вендорные префиксы. необходимые для корректного отображения анимации в браузерах. Как это выглядит:
+
+-webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; — для Chrome и Safari
+-o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; — для Opera
+-ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; — для IE
+-moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; — для Firefox
+
+Добавим и их:
+
+.effect .caption {
+   position: absolute;
+   top: -100%;
+   left: 0px;
+   background: rgba(0,0,0,0.7);
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+   -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;  
+   -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+}
+
+
+В статье, для краткости, я буду опускать префиксы, но не забывайте добавлять их для таких свойств, как transition, transform и transform-origin. В коде примеров под кнопкой CSS (или в самих файлах) префиксы тоже есть.
+
+Итак, мы добавили почти все, что необходимо для создания эффекта: начальные условия и условия перехода в конечную точку, осталось добавить только стили для самой конечной точки. 
+
+.effect:hover .caption {
+  top: 0px;
+}
+
+
+Эффект #1.2 строится аналогично, только .caption “выезжает” справа налево. Для этого мы вносим незначительные изменения в стили .caption:
+
+.effect .caption {
+   position: absolute;
+   top: 0px; 
+   left: 100%; 
+   background: rgba(0,0,0,0.7);
+   width: 100%;
+   height: 100%;
+   color: #fff;
+   -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+   -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;  
+   -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s; 
+}
+
+.effect:hover .caption {
+  left: 0px;
+}
+
+А вот в эффекте #1.3 внесены небольшие усложнения. Так .caption движется, как в эффекте #1.1 сверху вниз, но одновременно ему навстречу снизу вверх выдвигается еще один блок.
+
+Чтобы добиться такого эффекта, внесем изменения в html-структуру. Нам необходимо создать пустой div-контейнер с классом .overlay для блока, выезжающего снизу вверх: 
+
+<div class="effect>
+  <img src="img/ef1.jpg" alt="Effect #1" />
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+  <div class="overlay"></div>
+</div>
+
+Внесем изменения в стили для .caption. Изменим его положение для выдвижения сверху вниз, уменьшим прозрачность вдвое, чтобы сохранить итоговое значение прозрачности фона (в конечном итоге, у нас будут накладываться друг на друга два блока), добавим z-index, чтобы показать, какой из двух блоков будет “выше” при наложении:
+
+effect .caption {
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  background: rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  z-index: 10;
+}
+
+Добавим стили для .overlay.
+
+.effect .overlay {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background: rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  z-index: 5;
+}
+
+Осталось только определить конечную точку трансформаций: .caption опускается до top: 0px, а .overlay, наоборот, поднимается до этого же значения:
+.effect:hover .caption,
+.effect:hover .overlay {
+  top: 0px;
+}
+
+
+Изменяем прозрачность. Добавляем движение отдельных элементов. Эффекты #2.1-#2.3
+
+
+Пример
+
+В эффекте #2.1 элементы выдвигаются из центра к краям. Воспользуемся базовой html-структурой, в которую, для создания этого эффекта, не понадобится вносить никаких изменений. 
+
+А вот в css-стили изменения внести понадобится. В первую очередь, необходимо сместить заголовок и кнопку в центр .caption, чтобы задать начальную точку для последующего перехода. Кроме того, необходимо добавить этим элементам свойство transition, поскольку сейчас именно они являются объектами анимирования:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  top: 62px;
+  transition: all 0.3s linear 0s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -58px;
+  transition: all 0.3s linear 0s;
+  }
+
+
+Теперь, если мы зададим конечную точку анимации:
+
+.effect:hover h4,
+.effect:hover a.btn {
+  top: 0px;
+}
+
+
+мы получим не самый красивый результат. Полупрозрачная подложка никуда не делась, элементы кучкуются в центре и неэстетично оттуда разъезжаются. Поскольку, с помощью transition, можно изменять не только положение элемента, но и, например, его прозрачность, благодаря ей мы сможем скрыть и подложку, и элементы в центре до момента, пока не понадобится их подвинуть.
+
+Добавляем прозрачность и transition к .caption:
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+}
+
+Таким образом, сейчас .caption мы спрятали, и чуть позже настроим так, чтобы он появлялся только при наведении мыши. Необходимо добавить прозрачность и для всех элементов внутри .caption, и код для них будет выглядеть так:
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  top: 62px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -58px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+  }
+
+.effect .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+Теперь на hover будет происходить следующее: прозрачность .caption и элементов внутри нее сменится с opacity: 0 на opacity: 1, одновременно с чем начнет меняться местоположение заголовка и кнопки:
+
+.effect:hover h4,
+.effect:hover a.btn {
+  top: 0px;
+  opacity: 1;
+}
+
+.effect:hover .caption,
+.effect:hover p {
+  opacity: 1;
+}
+
+Эффекты #2.2 и #2.3 построены аналогичным образом, только для эффекта #2.2 заголовок и кнопку мы смещаем сверху вниз и снизу вверх соответственно, а для эффекта #2.3 справа налево и слева направо соответственно.
+
+Изменения, которые необходимо внести в код эффекта #2.1, чтобы получить эффект #2.2:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  top: -66px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: 66px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+  }
+
+В остальном, все остается аналогичным. 
+
+Ну а чтобы из эффекта #2.1 получить эффект #2.3, изменим следующее:
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  left: 300px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  left: -300px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+  }
+
+.effect:hover h4,
+.eff-2-3:hover a.btn {
+  left: 0px;
+  opacity: 1;
+}
+
+Поговорим о transform и об увеличении/уменьшении элементов. Эффекты #3.1-#3.3
+
+
+Пример
+
+Эффект #3.1 строится на том, что, при наведении, появляются очень увеличенные элементы <h4>, <p> и <a>, постепенно уменьшающиеся до нормальных размеров. 
+
+html-структуру оставляем базовой. Что касается изменений в таблице стилей, уменьшающимся элементам мы должны добавить свойство transform. Transform позволяет трансформировать элементы: вращать, менять им размеры, наклонять, перемещать, комбинировать несколько свойств для создания более сложных эффектов. Для этих эффектов мы разберем уменьшение/увеличение элементов.
+
+Необходимое для такой трансформации значение свойства transform — scale(x,y), где значение x — изменение размеров объекта по горизонтали, а y — по вертикали соответственно. Если мы применим это свойство для <h4>, <p> и <a>, то получим вот что:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  transform: scale(2);
+  transition: all 0.3s linear 0s;
+}
+
+Как видите, у значения scale в данном случае не два параметра, а один, и это означает, что и по горизонтали, и по вертикали наш элемент увеличен в два раза.
+
+.effect .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+  transform: scale(2);
+  transition: all 0.3s linear 0s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  transform: scale(2);
+  transition: all 0.3s linear 0s;
+}
+
+Теперь на hover наша задача уменьшить эти элементы до их нормального размера, что мы и делаем, добавляя эти стили:
+
+.effect:hover .caption h4,
+.effect:hover .caption p,
+.effect:hover .caption a.btn {
+  transform: scale(1);
+}
+
+Что касается .caption, как и в разборе эффектов #2.1-#2.3, мы выставляем ему opacity: 0 и очень маленькое время transition, чтобы появление подложки не отвлекало зрителя от основной анимации:
+
+.effect .caption {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.2s linear 0s;
+}
+
+.effect:hover .caption {
+  opacity: 1;
+}
+
+Эффект #3.2 строится аналогично предыдущему, с тем лишь исключением, что элементы не уменьшаются, а увеличиваются при наведении мыши. Выставим для них такое значение scale: 0.25, все прочие стили остаются аналогичны.
+
+А вот эффект #3.3 — это комбинация из перемещения элементов и изменения их размеров. Как видим, элемент <p> остается на своем месте и размеры не меняет, для него стили остаются стандартные. Что касается <h4> и <a>, наша задача — переместить их наверх и вниз соответственно и уменьшить в размерах:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  top: -100%;
+  transform: scale(0.25);
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: 100%;
+  transform: scale(0.25);
+}
+
+Теперь надо задать transition, но тут встает такой вопрос: элементы должны сначала — опуститься и лишь после — увеличиться в размерах, то есть, нужно задать transition для опускания элементов без задержки и transition с задержкой для увеличения. 
+
+Задать больше одного стилевого свойства для transition — просто: мы всего лишь перечисляем их через запятую, не забыв указать все параметры для каждого свойства:
+
+transition: top 0.3s linear 0s, transform 0.3s linear 0.3s;
+
+Добавим это правило к остальным стилевым правилам:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  top: -100%;
+  transform: scale(0.25);
+  transition: top 0.3s linear 0s, transform 0.3s linear 0.3s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: 100%;
+  transform: scale(0.25);
+  transition: top 0.3s linear 0s, transform 0.3s linear 0.3s;
+}
+
+Задаем конечную точку трансформаций:
+
+.effect:hover .caption h4,
+.effect:hover .caption a.btn {
+  transform: scale(1);
+  top: 0px;
+}
+
+Осталось только скрыть .caption по образу и подобию двух предыдущих эффектов:
+
+.effect .caption {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+
+.effect:hover .caption {
+  opacity: 1;
+}
+
+Крутим элементы: rotate. Задаем “точку вращения”. Эффекты #4.1-#4.4
+
+
+Пример
+
+Чтобы “крутить” элементы, свойству transform необходимо задать значение — rotate и его параметры. Какие параметры есть у значения rotate? Во-первых, ось вращения: X, Y или Z. Во-вторых, количество градусов, на которое будет повернут элемент. Так, например, если мы хотим повернуть элемент по оси Y на 30 градусов, выглядеть правило будет следующим образом:
+
+transform: rotateY(30deg);
+
+Эффекты #4.1-#4.3 построены на вращении элемента .caption вокруг каждой из трех осей, и начнем мы с эффекта #4.1, в котором .caption вращается вокруг оси X. Вот только само по себе вращение не так уж зрелищно, поэтому мы совместим его с изменением размера элемента. 
+
+html-структура остается базовой, равно как и стили для <h4>, <p> и <a> элементов. Изменяться будут лишь стили для .caption, и, в первую очередь, мы добавим новый transform:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotateX(0deg);
+  transition: all 0.4s linear 0s;
+}
+
+.effect:hover .caption {
+  transform: rotateX(360deg);
+}
+
+Теперь при наведении мыши элемент крутанется на вышеобозначенное количество градусов. Но хотелось бы, чтобы он не только крутился, но и, в отсутствие hover, исчезал, а на hover не только вращался, но и “выплывал”. Для этого добавим еще один transform со значением scale. Чтобы добавить элементу два и более значений transform, не нужно писать правило дважды, мы просто ставим эти значения через пробел. И поступаем аналогично с hover-стилями:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotateX(0deg) scale(0);
+  transition: all 0.4s linear 0s;
+}
+
+.effect:hover .caption {
+  transform: rotateX(360deg) scale(1);
+}
+
+Теперь .caption не просто вращается вокруг оси, но и словно появляется из глубины картинки.
+
+Эффект #4.2 строится полностью аналогично, только заменяем ось вращения на Y. 
+
+Эффект #4.3 строится, опять же, полностью аналогично. Поскольку rotateZ() полностью аналогична записи rotate(), мы просто меняем стили на:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(0deg) scale(0);
+  transition: all 0.4s linear 0s;
+}
+
+.effect:hover .caption {
+  transform: rotate(360deg) scale(1);
+}
+
+Эффект #4.4 сложнее. Он базируется не только на вращении и изменении размера, но еще и на изменении координат точки, вокруг которой совершается вращение, а также на усложненном значении параметра transition-timing-function свойства transition. Но начнем по порядку. 
+
+Суть в том, что вращение не может быть само по себе, оно всегда происходит относительно какой-либо точки. Дефолтные координаты этой точки — центр, то есть 50% 50%, но сейчас мы сменим их, чтобы изменить траекторию движения нашего .caption. Задаются координаты свойством transform-origin. Кроме того, давайте добавим transition со значением параметра transition-timing-function — linear: 
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(0deg) scale(0);
+  transition: all 1.1s linear 0s;
+}
+
+.effect:hover .caption {
+  transform: rotate(360deg) scale(1);
+  transform-origin: -10% -20%;
+}
+
+Сейчас эффект выглядит, как очень медленное вращение .caption вокруг оси Z относительно очень смещенной точки вращения. Чтобы усложнить эффект, изменим значение transition-timing-function на cubic-bezier(0.68, -0.55, 0.27, 1.55), что даст нам очень ускоренный выход в анимацию, замедленную середину и небольшой возврат назад в конце. Вот так будет выглядеть окончательный код:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(0deg) scale(0);
+  transition: all 1.1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+}
+
+.effect:hover .caption {
+  transform: rotate(360deg) scale(1);
+  transform-origin: -10% -20%;
+}
+
+Еще немного о scale и transform-origin. Эффекты #5.1-#5.4
+
+
+Пример
+
+Как я уже писала в разборе эффектов #3.1-#3.3, мы можем применять scale не только по двум осям одновременно, увеличивая/уменьшая элемент одновременно в длину и ширину, но и по одной оси. Так, например, в эффекте #5.1 мы видим, как .caption разворачивается из центра по горизонтали, но высота его при этом не меняется.
+
+Для этого элемента html-структура и стили для <h4>, <p> и <a> остаются базовыми. Изменятся только стили для .caption, который нам надо уменьшить только по оси X:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: scaleX(0);
+  transition: all 0.4s linear 0s;
+}
+
+И, чтобы произошло увеличение, на hover:
+
+.effect:hover .caption {
+  transform: scaleX(1);
+}
+
+Эффект #5.2 строится аналогично, только .caption развернется по оси Y, в остальном стили останутся аналогичны предыдущему.
+
+В эффекте #5.3 .caption тоже разворачивается по горизонтали, но не из центра, а от левого края. Чтобы подвинуть точку, от которой происходит переход, применим transform-origin, который, как видим, работает не только в связке с rotate:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: all 0.4s linear 0s;
+}
+
+Таким образом, мы смещаем точку, от которой происходит переход, по горизонтали в крайнее левое положение, а по вертикали она так и остается в дефолтном положении — по центру. Прочие стили остаются аналогичными.
+
+Эффект #5.4 аналогичен эффекту #5.3, здесь .caption разворачивается сверху вниз, от верхнего края:
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: scaleX(0);
+  transform-origin: center top;
+  transition: all 0.4s linear 0s;
+}
+
+Точка смещена в крайнее верхнее положение, по горизонтали же — остается по центру. Прочие стили аналогичны. 
+
+Как еще можно использовать связку rotate и transform-origin. Эффекты #6.1-#6.3
+
+
+Пример
+
+В эффекте #6.1 при наведении мыши .caption проворачивается, как если бы был закреплен на невидимом гвоздике. Роль “гвоздика” выполняет transform-origin с заданными координатами, а поворот обеспечивает rotate.
+
+html-структура остается базовой, равно как и стили для <h4>, <p> и <a>. Изменяем только стили для .caption. Давайте, для начала, добавим rotate:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(180deg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+Теперь .caption оказывается просто повернут вверх ногами. Пусть на hover он будет возвращаться в исходное положение:
+.effect:hover .caption {
+  transform: rotate(0deg);
+}
+
+Теперь, при наведении мыши, .caption просто прокручивается вокруг своей оси. Но, если мы изменим координаты точки, вокруг которой происходит переход, и, как в данном случае, перенесем ее наверх по вертикали таким образом:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(180deg);
+  transform-origin: center top;
+  transition: all 0.4s cubic-bezier(0.4, 0, 1, 1) 0s;
+}
+
+Получится следующее: .caption сместится наверх, как если бы мы ему дали top: -100%; потому что сместилась точка, относительно которой он вращается. 
+
+Теперь, если мы будем смещать координаты “точки перехода” и изменять направление вращение, то сможем получить различные вариации этого эффекта. Так, например, эффект #6.2 почти полностью аналогичен предыдущему, только transform-origin: center bottom; а направление вращения изменено на противоположное благодаря тому, что исходное значение стало таким transform: rotate(-180deg);
+
+В эффекте #6.3 направление вращения остается таким же, как в #6.2, а “точка перехода” смещена на середину правой стороны контейнера: transform-origin: right center; В остальном, стили остаются теми же самыми.
+
+Поговорим подробнее о delay. Эффекты #7.1-#7.3
+
+
+Пример
+
+Сейчас мы немного нарушим порядок разбора эффектов и начнем с эффекта #7.2, потом перейдем к #7.3, и лишь потом вернемся к #7.1 как к самому сложному из линейки. 
+
+Итак, эффект #7.2: при наведении мыши сверху и снизу выезжают два контейнера .overlay и, когда смыкаются, сверху выезжает .caption.
+
+html-структура понадобится такая:
+
+<div class="effect">
+  <img src="img/ef7.jpg" alt="Effect #7" />
+  <div class="overlay overlay-top"></div>
+  <div class="overlay overlay-bottom"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut. </p>
+     <a class="btn" href="#" title="View More">View More</a>
+  </div>
+ </div>
+
+Как видите, у нас добавилось два .overlay-слоя, тех самых, что будут выезжать сверху и снизу. 
+
+Что касается стилей: для <h4>, <p> и <a> стили остаются дефолтные.
+
+Теперь давайте рассмотрим стили для .overlay-контейнеров:
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 50%;
+  left: 0px;
+  position: absolute;
+  transition: all 0.15s linear 0s;
+}
+
+.effect .overlay-top {
+  top: -100%;
+}
+
+.effect .overlay-bottom {
+  top: 100%;
+}
+
+.overlay-top мы убрали вверх, .overlay-bottom — соответственно, вниз, теперь нам нужно, чтобы при наведении мыши они съезжались. Поскольку каждый из них имеет высоту, равную 50% высоты родителя, сделать это просто:
+
+.effect:hover .overlay-top {
+  top: 0px;
+}
+
+.effect:hover .overlay-bottom {
+  top: 50%;
+}
+
+Теперь определим вид и поведение .caption, который у нас тоже спускается сверху, а значит, должен быть наверх помещен. Теперь, поскольку .caption появляется после .overlay, было бы логично, что у него будет проставлено значение параметра delay свойства transition: 
+
+.effect .caption {
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.2s linear 0.3s;
+}
+
+.effect:hover .caption {
+  top: 0px;
+}   
+
+Давайте проверим, как это сработает. Какой выходит результат по шагам:
+Наводим мышь на .effect
+Выезжают .overlay
+Появляется .caption
+Снимаем hover
+.overlay возвращаются на свои места
+.caption, благодаря выставленному значению delay, возвращается на место на 0.3s позже, что совсем не входило в наши планы
+
+Выходит, что delay, определенный для .caption, срабатывает, но не с тем результатом, с каким бы нам этого хотелось. Что тут можно сделать? 
+
+Мы можем задавать delay не только в стилях самого элемента, но и в стилях его поведения на hover, и в этом будет заключаться наш трюк. Как должны себя вести элементы на hover? Сначала выезжают .overlay и только потом .caption, это значит, что в состоянии hover у .overlay задержка равняется 0s, а у .caption — например, 0.3s 
+
+.effect:hover .caption {
+  top: 0px;
+  transition-delay: 0.3s;
+}  
+
+.effect:hover .overlay {
+  transition-delay: 0s;
+}
+
+Но, когда мы снимаем hover, элементы возвращаются к своему обычному поведению, при котором сначала, без всякой задержки, на место возвращается .caption, а затем — .overlay, и, значит, у первого мы должны задержку отменить, а вторым — добавить:
+
+.effect .caption {
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.2s linear 0s;
+}
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 50%;
+  left: 0px;
+  position: absolute;
+  transition: all 0.15s linear 0.3s;
+}
+
+Вот теперь очередность будет соблюдена, и элементы будут двигаться в правильном порядке. 
+
+Эффект #7.3 почти аналогичен предыдущему, разница лишь в стилях для .overlay:
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.15s linear 0.4s;
+}
+
+.effect .overlay-top {
+  left: 0;
+  top: -100%;
+}
+
+.effect .overlay-bottom {
+  right: 0;
+  top: 100%;
+}
+
+.effect:hover .overlay {
+  top: 0;
+  transition-delay: 0s;
+}
+
+С эффектом #7.1 придется повозиться чуть дольше. Как и #7.3, он отличается от #7.2 только положением и стилями для .overlay, выезжающими сверху справа и снизу слева двумя треугольниками. 
+
+Но, конечно, выезжать у нас будут не треугольники, а прямоугольники. Вот общие стили для обоих .overlay: 
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 408px;
+  height: 170px;
+  position: absolute;
+  transform: rotate(33deg);
+  transition: all 0.15s linear 0.3s;
+}
+
+Вот что важно: ширина и высота прямоугольников должна индивидуально подгоняться под размер вашего контейнера с эффектом, равно как и координаты, на которые мы их поместим (и на которые потом передвинем). Что мы делаем: берем наши прямоугольники, разворачиваем на 33 градуса каждый, верхний смещаем к верхнему правому углу контейнера .effect, нижний — к нижнему левому соответственно, а на hover смещаем их до соприкосновения по линии диагонали прямоугольника контейнера .effect:
+
+.effect .overlay-top {
+  top: -158px;
+  left: 142px;
+}
+
+.effect:hover .overlay-top {
+  top: -50px;
+  left: -1px;
+  
+}
+
+.effect .overlay-bottom {
+  top: 192px;
+  left: -244px;
+}
+
+.effect:hover .overlay-bottom {
+  top: 79px;
+  left: -111px;
+}
+
+.effect:hover .overlay {
+  transition-delay: 0s;
+}
+
+Прочие стили идентичны стилям предыдущих эффектов.
+
+Применяем полученные навыки на практике. Больше трюков! Эффекты #8.1-#10.3
+
+
+#8.1-#8.3
+
+Пример
+
+Изюминку этих эффектов составляет bounce-эффект, строящийся на значении параметра transition-timing-function свойства transition для .overlay.
+
+html-структура такова:
+
+<div class="effect">
+  <img src="img/ef8.jpg" alt="Effect #8" />
+  <div class="overlay"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>  
+
+В данном случае .overlay понадобится всего один. Вот такие понадобятся для него стили:
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: scale(0);
+  transition: all 0.4s cubic-bezier(0, 1.31, 1, -0.29) 0.4s;
+}
+
+Ну а на hover увеличиваем его:
+
+.effect:hover .overlay {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+Чтобы .caption не отвлекал, все, что мы пропишем для него — это изменение прозрачности:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.2s linear 0s;
+}
+
+.effect:hover .caption {
+  opacity: 1;
+  transition-delay: 0.6s;
+}   
+
+Прочие стили остаются дефолтными.
+
+Эффекты #8.2-#8.3 строятся аналогично. Вся разница лишь в том, что в #8.2 используется scaleX(), а в #8.3 — scaleY(), о которых я подробно рассказывала при разборе эффектов #3.1-#3.3
+
+#9.1-#9.3
+
+Пример
+
+Эффект #9.1 строится на том, что два .overlay появляются по очереди из центра, а следом за ними с небольшим bounce-эффектом выезжает .caption. 
+
+Что касается html-структуры, она такова:
+
+<div class="effect">
+  <img src="img/ef9.jpg" alt="Effect #9" />
+  <div class="overlay overlay-1"></div>
+  <div class="overlay overlay-2"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>           
+
+Стили для <h4>, <p> и <a> остаются неизменными. Рассмотрим стили для .overlay:
+
+.effect .overlay {
+  background: rgba(0,0,0,0.35);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: scale(0);
+}
+
+Поскольку .overlay-1 и .overlay-2 вступают в разное время, transition им дадим каждому — свой:
+
+.effect .overlay-1 {
+  transition: all 0.2s linear 0.3s;
+}
+
+.effect .overlay-2 {
+  transition: all 0.2s linear 0.6s;
+}
+
+.effect:hover .overlay {
+  transform: scale(1);
+}
+
+Соответственно, и при снятии hover исчезают они с задержкой относительно друг друга. Поэтому для .overlay-1 мы проставим delay: 0s, а для .overlay-2 — delay: 0.2s (подробнее о влиянии delay на очередность появления и исчезновения элементов я писала при разборе эффектов #7.1-#7.3)
+
+.effect:hover .overlay-1 {
+  transition-delay: 0s;
+}
+
+.effect:hover .overlay-2 {
+  transition-delay: 0.2s;
+}
+
+Осталось рассмотреть стили .caption:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.4s cubic-bezier(0.05, -0.24, 0, 1.33) 0s;
+}
+
+.effect:hover .caption {
+  left: 0px;
+  transition-delay: 0.4s;
+}   
+
+Эффект #9.2 строится аналогично, только .overlay круглые и .caption, как и .overlay, появляется из центра:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s linear 0s;
+  transform: scale(0);
+}
+
+.effect:hover .caption {
+  transform: scale(1);
+  transition-delay: 0.4s;
+}      
+
+.effect .overlay {
+  background: rgba(0,0,0,0.35);
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.effect .overlay-1 {
+  transition: all 0.5s linear 0.3s;
+}
+
+.effect .overlay-2 {
+  transition: all 0.5s linear 0.6s;
+}
+
+Прочие стили аналогичны стилям эффекта #9.1
+
+Эффект #9.3 строится следующим образом. Нужна такая html-структура:
+
+<div class="effect”>
+  <img src="img/ef9.jpg" alt="Effect #9" />
+  <div class="overlay"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>            
+
+Чтобы добиться такого вида для .overlay, мы дадим ему постепенно увеличивающуюся box-shadow:
+
+.effect .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transition: all 0.3s linear 0.3s;
+}
+
+.effect:hover .overlay {
+  box-shadow: inset 0px 0px 25px 100px rgba(0,0,0,0.7);
+}
+
+Изначальное положение для .caption будет: разворот на 180 градусов и opacity: 0. На hover разворачиваем .caption, который, в процессе поворота, становится непрозрачным:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transform: rotate(180deg);
+  transition: all 0.3s linear 0s;
+}
+
+.effect:hover .caption {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition-delay: 0.5s;
+}
+
+
+Все остальные стили — дефолтные.
+
+#10.1-#10.3
+
+Пример
+
+Эффект #10.1 состоит из пяти меняющих размер “лесенкой” элементов .overlay и, словно выныривающего, .caption.
+
+html-структура нужна такая:
+
+<div class="effect">
+  <img src="img/ef10.jpg" alt="Effect #10" />
+  <div class="overlay overlay-1"></div>
+  <div class="overlay overlay-2"></div>
+  <div class="overlay overlay-3"></div>
+  <div class="overlay overlay-4"></div>
+  <div class="overlay overlay-5"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>          
+
+Сначала построим “лесенку”. Каждый .overlay отличается от другого своим местоположением и значением параметра delay:
+
+.effect .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+}
+
+.effect .overlay-1 {
+  left: 0;
+  transition: all 0.15s linear 0.2s;
+}
+
+.effect .overlay-2 {
+  left: 20%;
+  transition: all 0.15s linear 0.25s;
+}
+
+.effect .overlay-3 {
+  left: 40%;
+  transition: all 0.15s linear 0.3s;
+}
+
+.effect .overlay-4 {
+  left: 60%;
+  transition: all 0.15s linear 0.35s;
+}
+
+.effect .overlay-5 {
+  left: 80%;
+  transition: all 0.15s linear 0.4s;
+}
+
+
+На hover их delay тоже будут различаться:
+
+.effect:hover .overlay {
+  top: 0px;
+}
+
+.effect:hover .overlay-1 {
+  transition-delay: 0s;
+}
+
+
+.effect:hover .overlay-2 {
+  transition-delay: 0.1s;
+}
+
+.effect:hover .overlay-3 {
+  transition-delay: 0.15s;
+}
+
+.effect:hover .overlay-4 {
+  transition-delay: 0.2s;
+}
+
+.effect:hover .overlay-5 {
+  transition-delay: 0.25s;
+}
+
+Самое интересное и сложное здесь — .caption. Вот базовые стили для него:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s linear 0s;
+}
+
+Теперь нам нужно задать ему положение до начала анимации. Во-первых, развернуть, ведь, когда мы наводим мышь, мы видим, как .caption проворачивается на некоторый угол. Зададим и transform-origin, определяющий точку, вокруг которой будет проходить трансформация. Добавим transform: rotate(-50deg); и transform-origin: 0% 100%;. Следующим шагом будет смещение по вертикали и по горизонтали, чтобы чуть позже обеспечить “выныривание”. Смещать будем с помощью transform: translate(x,y), который сдвигает элемент по оси X и Y соответственно. Наша задача — сдвинуть .caption почти в самый угол по горизонтали и примерно на две трети за пределы контейнера .effects по вертикали:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transform: rotate(-50deg) translate(-101px,291px);
+  transform-origin: 0% 100%;
+  transition: all 0.3s linear 0s;
+}
+
+Теперь нам нужно совсем скрыть .caption до тех пор, пока на контейнер с эффектом не наведут мышь. В этот раз мы спрячем с помощью height: 0px; и overflow: hidden;. Конечные стили такие:
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  color: #fff;
+  transform: rotate(-50deg) translate(-101px,291px);
+  transform-origin: 0% 100%;
+  transition: all 0.3s linear 0s;
+}
+
+Теперь, чтобы проявить .caption на hover, восстановим его высоту, повернем до rotate(0deg) и вернем на место по горизонтали и вертикали:
+
+effect:hover .caption {
+  height: 100%;
+  transform: rotate(0deg) translate(0px,0px);
+  transition-delay: 0.3s;
+}
+
+Стили для <h4>, <p> и <a> остаются дефолтными. 
+
+Эффект #10.2 строится на двух .overlay, выезжающих из верхнего левого и правого нижнего угла соответственно, а также на “выпадании” сверху элементов <h4>, <p> и <a>.
+
+html-структура нужна такая: 
+
+<div class="effect">
+  <img src="img/ef10.jpg" alt="Effect #10" />
+  <div class="overlay overlay-1"></div>
+  <div class="overlay overlay-2"></div>
+  <div class="caption">
+    <h4>Title is Here</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+    <a class="btn" href="#" title="View More">View More</a>
+  </div>
+</div>   
+
+Начнем с левого верхнего .overlay, раскрывающегося полупрозрачной подложкой:
+
+.effect .overlay-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s linear 0.3s;
+}
+
+.effect:hover .overlay-1 {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+} 
+
+Интереснее с нижним правым. Поскольку ширина border равна 4px, просто задать ширине и высоте по 100% недостаточно, нужно компенсировать по 8px по вертикали и по горизонтали, чем нам и поможет calc:
+
+effect .overlay-2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: transparent;
+  border: 4px double #fff;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  transition: all 0.3s linear 0.3s;
+}
+
+.effect:hover .overlay-2 {
+  width: 100%;
+  max-width: calc(100% - 8px);
+  height: 100%;
+  max-height: calc(100% - 8px);
+  opacity: 1;
+  transition-delay: 0s;
+} 
+
+
+Теперь перейдем к .caption и его содержимому. Для .caption стили остаются дефолтными, изменятся они для перемещаемых элементов <h4>, <p> и <a>, каждый из которых необходимо сместить наверх. Чтобы заголовок не налезал на border подчеркиванием, рассчитаем ему ширину, как и .overlay-2:
+
+.effect .caption h4 {
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  margin: 20px auto 0px auto;
+  width: calc(100% - 8px);
+  position: relative;
+  top: -100%;
+  transition: all 0.3s linear 0.2s;
+}
+
+.effect .caption p {
+  margin: 15px 0px;
+  text-align: center;
+  font-style: italic;
+  padding: 0px 10px;
+  position: relative;
+  top: -100%;
+  transition: all 0.3s linear 0.1s;
+}
+
+.effect .caption a.btn {
+  width: 120px;
+  text-align: center;
+  display: block;
+  background: #68432d;
+  color: #fff;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  position: relative;
+  top: -100%;;
+  transition: all 0.3s linear 0s;
+}
+
+Осталось лишь, чтоб элементы опускались на hover, причем в установленном нами порядке:
+
+.effect:hover .caption a.btn,
+.effect:hover .caption p,
+.effect:hover .caption h4 {
+  top: 0px;
+}
+
+.effect:hover .caption a.btn {
+  transition-delay: 0.3s;
+}
+
+.effect:hover .caption p {
+  transition-delay: 0.4s;
+}
+
+.effect:hover .caption h4 {
+  transition-delay: 0.5s;
+}                  
+
+Эффект #10.3 состоит из увеличивающейся картинки и изменения угла поворота .caption на hover.
+
+html-структура нужна дефолтная, равно как и стили для <h4>, <p> и <a>. А начнем мы с увеличения картинки:
+
+.effect img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s linear 0.3s;
+  transform: scale(1);
+
+}
+
+.effect:hover img {
+  transform: scale(1.3); 
+  transition-delay: 0s;
+}
+
+Ну а что касается .caption — задача в том, чтобы, развернув его на 30 градусов, совместить его правый нижний угол с правым нижним углом картинки и заставить исчезнуть с помощью понижения прозрачности. А его transition, состоит из двух частей:
+
+opacity должен измениться сразу же, как только наводим мышь, за очень короткое время. opacity 0.1s linear 0s
+для transform необходима задержка на величину времени, необходимого для п.1, и transition-timing-function, создающий иллюзию небольшого замаха: transform 0.35s cubic-bezier(0.49, -0.19, 0.7, -0.01) 0.1s
+
+
+.effect .caption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  transform: rotate(30deg) translate(30px,-89px);
+  transition: transform 0.35s cubic-bezier(0.49, -0.19, 0.7, -0.01) 0.1s, opacity 0.1s linear 0s;
+}
+
+.effect:hover .caption {
+  transform: rotate(0deg) translate(0px,0px);
+  opacity: 1;
+  transition-delay: 0.3s;
+}       

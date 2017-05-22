@@ -1,0 +1,55 @@
+
+style.css /*
+Theme Name: Nikstorm
+Theme URI: http://nikstorm.ru
+Author: Nikstorm
+Version: 1.0
+
+*/
+
+
+header.php
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/bootstrap/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/animate/animate.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/linea/styles.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/magnific-popup/magnific-popup.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/libs/soc.js/soc.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/fonts.css" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/main.css" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/skins/tomato.css" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/media.css" />
+	<?php wp_head();?>
+index.php
+	<?php get_header();?>
+footer.php
+	<script src="<?php echo get_template_directory_uri();?>/libs/mixitup/mixitup.min.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/libs/waypoints/waypoints.min.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/libs/sliphover/jquery.sliphover.min.js"></script>
+	<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>
+<?php wp_footer();?>
+	<?php get_footer();?>
+function.php
+	
+	remove_action("wp_head","rsd_link");
+	remove_action("wp_head","wlwmanifest_link");
+	remove_action("wp_head","wp_generator");
+
+	show_admin_bar(false); --- Отключить админскую строку сверху
+
+
+
+function logo_widget_init() {
+
+	register_sidebar( array(   --- включение виджетов
+		'name'          => 'Логотип SVG',
+		'id'            => 'logo',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<span class="hidden">',
+		'after_title'   => '</span>',
+	) );
+
+	}
+	add_action( 'widgets_init', 'logo_widget_init' );

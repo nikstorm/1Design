@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+	<svg type="image/svg+xml" width="450" height="450" style="position: absolute;top: 400px; left: 400px;" 
+xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="450" viewBox="-15 -17 450 450">
+
+		<path id="link0" d="M20,150 A130,130 0 1,1 280,150" stroke="transparent" />
+		<a xlink:href="https://www.yandex.ru" xlink:show="new"
+onmouseover="over();" 
+onmouseout="out();">
+			<text font-size="17" font-family="arial" fill=" #0000FF">
+				<textPath xlink:href="#link0" startOffset="18%">Яндекс</textPath>
+			</text>
+		</a>
+
+	</svg>
+	<div>Vsegda vidimyi text</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="cont_from" style="display:none">Yandex - поисковая система.</div>
+	<script>
+	function over(){
+ 	document.getElementById('cont_from').style.display="block";
+ }
+ function out(){
+ 	document.getElementById('cont_from').style.display="none";
+ }
+</script>
+</body>
+</html>

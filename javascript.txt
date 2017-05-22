@@ -1,0 +1,231 @@
+document.getElementById("fddfg")
+document.getElementElementsByClassname('fdsfs')[0]
+document.querySelector("selector");
+		.querySelectorAll("selector");
+		.querySelector("selector").addEventListener('click',function([event]){
+			alert('Clicked'+event);
+			
+		})
+		event.preventDefault(); - блокирует выполнение дефолтного действия(напр. переход по ссылке)
+		event.stopPropagation(); - блокирует дальнейшую обработку события	
+
+***************		
+Вызов скриптов из тела документа		
+***document.head.appendChild(script); 
+function addScript(src){
+  var script = document.createElement('script');
+  script.src = src;
+  script.async = false; // чтобы гарантировать порядок
+  document.head.appendChild(script);
+}
+
+addScript('1.js'); // загружаться эти скрипты начнут сразу
+addScript('2.js'); // выполнятся, как только загрузятся
+addScript('3.js'); // но, гарантированно, в порядке 1 -> 2 -> 3
+***************
+		
+Вызов функций
+testFunc(); - ошибка, функция определена через var уже после вызова
+
+function myFunc(){
+	console.log('myFunc');
+}
+
+var testFunc = function(){
+	console.log('testFunc');
+}
+
+
+Замыкания
+function printConsole(x) {
+	return function(){
+		console.log('I',x);
+	}
+}
+for (var i=0;i<10;i++){
+	setTimeout(printConsole(i),1000);
+}
+
+=
+var title = document.getElementById('title');
+title.hidden = true; // Скрывает элемент
+=
+var titles = document.getElementsByClassName('main-title');
+
+for (var item of titles) {
+    console.log(item);
+    item.style.color = 'red';
+};
+=
+var title = document.getElementById('title');
+
+var id = title.id;
+var type = title.type;
+var value = title.value;
+
+=
+var title = document.getElementById('title');
+
+title.innerHTML = 'Это новый заголовок!'; // Добавляем внутрь нашего заголовка новый текст
+
+document.body.innerHTML = '<p>Это абзатц<ul><li>1</li><li>2</li><li>3</li></ul></p>'; // Добавляет внутрь body новую разметку
+=
+var body = document.body;
+
+console.log(body.outerHTML); // outerHTML свойство возвращающее всю разметку внутри элемента
+=
+var title = document.getElementById('title');
+
+title.textContent = 'Новый заголовок!'; // Добавляет только текст
+=
+var body = document.body; // Обращаемся к body
+
+console.log(body);
+=
+var childrens = document.body.childNodes; // childNodes хранит все дочернии элементы, включая текст
+
+var firstChild = childrens[0];
+
+firstChild = document.body.firstChild; // Обращение к первому элементу
+
+var lastChild = document.body.lastChild; // Обращение к последнему элементу
+=
+var title = document.getElementById('title');
+
+var body = title.closest('body'); // Ищет выше по ирархии указанный элемент
+=
+var titles = document.getElementsByTagName('h1'); // Ищем элементы с тегом <h1>
+=
+var titles = document.getElementsByClassName('main-title'); // Ищем элементы с классами 'main-title'
+
+console.log(titles);
+=
+var titles = document.getElementsByName('title'); // Ищем элементы с атрибутом name, равным title
+=
+var title = document.getElementById('title'); // Обращаемся к элементу с id 'title'
+=
+
+var isMainTitle = title.matches('.main-title._active'); // Проверяем соответсвует ли текущий элемент данному селектору
+=
+var title = document.querySelector('#title + .main-title'); // Ищет элемент соответствующий данному селектор и возвращает первый попавшийся
+
+=
+var titles = document.querySelectorAll('#title + .main-title'); // Ищем все элементы соответствующие данному селектору
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+=
+
+=
+
+=
+
+=
+
+=
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ООП

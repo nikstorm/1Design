@@ -1,0 +1,328 @@
+
+Стрелки с помощью свойства border
+
+http://css.yoksel.ru/strelki-s-pomoshh-yu-svojstva-border/
+04/09/2013
+С помощью border можно легко делать стрелочки разного размера и в разных направлениях.
+
+Чтобы понять общий принцип, возьмем див нулевого размера, сделаем ему толстую рамку и раскрасим её в разные цвета: 
+
+DIV {
+  width: 0;
+  height: 0;
+  margin: 50px auto;
+  border: 50px solid; 
+  border-color: orangered gold yellowgreen steelblue;
+  }
+
+BODY {
+  background: white;
+}
+Теперь достаточно задать transparent вместо цветов, которые не нужны, и обнулить border напротив нужного уголка, чтобы он не влиял на ширину фигуры:
+
+DIV {
+  width: 0;
+  height: 0;
+  border: 40px solid transparent; 
+  }
+.arrow-top {
+  border-top-color: orangered;  
+  border-bottom: 0;
+  }
+.arrow-right {
+  border-right-color: gold;  
+  border-left: 0;
+  }
+.arrow-bottom {
+  border-bottom-color: yellowgreen;  
+  border-top: 0;
+  }
+.arrow-left {
+  border-left-color: steelblue;  
+  border-right: 0;
+  }
+
+
+BODY {
+  background: white;
+  }
+DIV {
+  display: inline-block;
+  margin: 30px 10px;
+  }
+  
+  Обнулив border не с одной стороны, а с двух, можно получить вот такие уголки:
+  DIV {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent; 
+  }
+.arrow-top {
+  border-top-color: orangered;  
+  border-bottom: 0;
+  border-right: 0;
+  }
+.arrow-right {
+  border-right-color: gold;  
+  border-left: 0;
+  border-bottom: 0;
+  
+  }
+.arrow-bottom {
+  border-bottom-color: yellowgreen;  
+  border-top: 0;
+  border-left: 0;
+  }
+.arrow-left {
+  border-left-color: steelblue;  
+  border-right: 0;
+  border-top: 0;
+  }
+
+
+BODY {
+  background: white;
+  }
+DIV {
+  display: inline-block;
+  margin: 30px 10px;
+  }
+Аналогичный эффект можно получить, задав цвет двум сторонам, находящимся рядом:
+DIV {
+  width: 0;
+  height: 0;
+  border: 25px solid transparent; 
+  }
+.arrow-top {
+  border-color: orangered orangered transparent transparent;
+  }
+.arrow-right {
+  border-color: transparent gold gold transparent;
+  }
+.arrow-bottom {
+  border-color: transparent transparent yellowgreen yellowgreen;
+  }
+.arrow-left {
+ border-color: steelblue transparent transparent steelblue;
+  }
+
+
+BODY {
+  background: white;
+  }
+DIV {
+  display: inline-block;
+  margin: 30px 10px;
+  }
+
+При этом в середине длинной стороны может быть небольшая неровность, в отличие от первого способа.
+
+А если задать цвет с трёх сторон, получатся флажки : )
+
+.flags {
+  white-space: nowrap;
+  }
+.flags:nth-child(2) {
+  margin-left: -320px;
+  }
+.flags:nth-child(3) {
+  margin-left: -160px;
+  }
+SPAN {
+  display: inline-block;
+  width: 160px;
+  margin: 20px 0;
+  border-top: 1px solid silver;
+  }
+SPAN {
+  position: relative;
+  }
+  SPAN:before,
+  SPAN:after {
+    content: ""; 
+    display: inline-block;
+    position: relative;
+    border: 25px solid transparent; 
+    border-color: orangered;
+    }
+    SPAN:after {
+    margin-left: 30px;
+    border-color: gold;
+    }
+  SPAN:nth-child(4n+2):before {
+    border-color: yellowgreen;
+    }
+  SPAN:nth-child(4n+2):after {
+    border-color: orange;
+    }
+SPAN:nth-child(4n+3):before {
+  border-color: mediumturquoise;
+  }
+SPAN:nth-child(4n+3):after {
+  border-color: crimson;
+  }
+SPAN:nth-child(4n+4):before {
+  border-color: gold;
+  }
+SPAN:nth-child(4n+4):after {
+  border-color: steelblue;
+  }
+SPAN:before,
+SPAN:after {
+  border-bottom-color: transparent !important;
+  }
+BODY {
+  overflow: hidden;
+  background: white;
+  }
+Но вернемся к стрелкам. Сочетая border и псевдоэлементы можно получить вот такие варианты:
+<div class="arrow"></div>
+  <div class="arrow"></div>
+  <div class="arrow"></div>
+  <div class="arrow"></div>
+  
+  
+.arrow {
+  position: relative;
+  margin: 50px auto;
+  }
+  .arrow:before,
+  .arrow:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent; 
+    border-right: 0;
+    }
+.arrow:nth-child(1) {
+  width: 200px;
+  height: 30px;
+  background: orangered;  
+  }
+  .arrow:nth-child(1):after {
+    top: -25px;
+    right: -30px;
+    border-left-color: orangered;  
+    }
+.arrow:nth-child(2) {
+  width: 200px;
+  height: 10px;
+  background: gold;  
+  }
+  .arrow:nth-child(2):after {
+    top: -7px;
+    right: -25px;
+    border-left-color: gold;  
+    border-width: 12px 0 12px 60px;
+    }
+.arrow:nth-child(3) {
+  width: 60px;
+  height: 60px;
+  border: 15px solid yellowgreen;  
+  border-right-color: transparent;
+  border-radius: 50%;
+  }
+  .arrow:nth-child(3):after {
+    top: -16px;
+    left: 34px;
+    border-bottom-color: yellowgreen;  
+    border-top: 0;
+    border-right: 0;
+    }
+.arrow:nth-child(4) {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: steelblue;
+  }
+  .arrow:nth-child(4):before {
+    top: -7px;
+    left: -19px;
+    border: 15px solid transparent; 
+    border-right-color: steelblue; 
+    border-left: 0;
+    }
+  .arrow:nth-child(4):after {
+      top: -7px;
+      right: -19px;
+      border: 15px solid transparent; 
+      border-left-color: steelblue; 
+      border-right: 0;
+      }
+
+
+BODY {
+  background: white;
+  }
+DIV {
+  margin: 30px 10px;
+  }
+
+Большим преимуществом способа является отсутствие изображений, что позволяет в любой момент изменить цвет и размер стрелки.
+
+А ещё таким способом легко делать ленточки:
+
+ <div class="ribbon"><h1>I'm ribbon</h1></div>
+ 
+ 
+.ribbon {
+  position: relative;
+  width: 80%;
+  min-width: 300px;
+  margin: 3em auto;
+  
+  }
+H1 {
+  margin: 0 1em;
+  background: orangered;
+  font-weight: normal;
+  line-height: 1.7em;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0,0,0,.4);
+          box-shadow: 0 3px 5px rgba(0,0,0,.2);
+  color: #FFF;
+  }
+  .ribbon:before,
+  .ribbon:after,
+  H1:before,
+  H1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    }
+    .ribbon:before,
+    .ribbon:after {
+      top: 1.4em;
+      z-index: -2;
+      border: 1.6em solid orangered; 
+      }
+      .ribbon:before {
+        left: 0;
+        border-left-color: transparent;
+        }
+      .ribbon:after {
+        right: 0;
+        border-right-color: transparent;
+        }
+    H1:before,
+    H1:after {
+      top: 1.7em;
+      z-index: -1;
+      border: .3em solid crimson;
+      border-bottom-color: transparent;
+      }
+      H1:before {
+        left: 1em;
+        border-left-color: transparent;
+        }  
+      H1:after {
+        right: 1em;
+        border-right-color: transparent;
+        }  
+BODY {
+  background: white;
+  }

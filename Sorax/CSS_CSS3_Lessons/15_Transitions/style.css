@@ -1,0 +1,79 @@
+body{
+	background: url('http://subtlepaterns.com/patterns/subtlenet2.png');
+	font:1em 'PT Sans', Tahoma, Arial;
+	text-transform: uppercase;
+	
+}
+.nav{
+	list-style: none;
+	padding: 0;
+	margin: 30px;
+	opacity: .5;
+}
+.nav:hover{
+	opacity: 1;
+}
+.nav li{
+	width: 50px;
+	height: 50px;
+	overflow: hidden;	
+
+}
+.nav li:hover{
+	width: 200px;
+	height: 174px;
+	transition: all .7s ease-in-out;
+	// transition: height .7s ease-in-out;
+}
+.nav li a{
+	display: block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background: #bbb;
+	margin: 1px;
+	padding-left: 15px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+
+
+}
+.nav li a:hover{
+	background-color: #2fc5ff;
+	
+	transition-property: all;
+	transition-duration: .2s;
+	transition-timing-function: ease-in-out;
+	transition-delay: .1s;
+}
+.nav li a:first-child{
+	font-size: 1.1em;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-indent: 36px;
+}
+
+.nav li a:first-child:before{
+	content: '';
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	display: block;
+	top: 9px;
+	left: 9px;
+}
+.main-menu a:first-child:before{
+	background: url(home.png) center no-repeat;
+}
+.settings a:first-child:before{
+	background: url(settings.png) center no-repeat;
+}
+.link a:first-child:before{
+	background: url(link.png) center no-repeat;
+}
+.search a:first-child:before{
+	background: url(search.png) center no-repeat;
+}
+

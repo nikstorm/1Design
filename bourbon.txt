@@ -1,0 +1,29 @@
+Устновка bourbon
+gem install bourbon
+
+Pro Tip: You can target installation into a specific directory using the path flag:
+
+bourbon install --path my/custom/path/
+Import Bourbon at the beginning of your stylesheet:
+
+@import "bourbon/bourbon";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

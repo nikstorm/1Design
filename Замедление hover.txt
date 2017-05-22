@@ -1,0 +1,8 @@
+.block{
+transition: background-color 1s linear, color 1s 1s ease-in-out, width 1s 2s ease
+	-moz-transition: background-color 1s linear, color 1s 1s ease-in-out, width 1s 2s ease
+	-webkit-transition: background-color 1s linear, color 1s 1s ease-in-out, width 1s 2s ease
+	-o-transition: background-color 1s linear, color 1s 1s ease-in-out, width 1s 2s ease
+	}
+	
+.block:hover{}	

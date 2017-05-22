@@ -1,0 +1,32 @@
+
+— flexbox не работают свойства float clear columns vertical-align
+marginы складываютс€!!!!!
+<div class="main">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+.main{ 
+	display:flex - 
+	flex-direction: row|row-reverse|column|column-reverse; главна€ направл€юща€
+	justify-content: flex-start|flex-end|center|space-between|space-around;
+	align-items: stretch - раст€нуть
+				 center - по центру	
+				 flex-end - прижать к концу поперечной оси
+				 flex-start - прижать к началу поперечной оси
+				 baseline - выстроить относительно базовой линии
+	flex-wrap: nowrap нет переноса
+			   wrap 1 2 
+					3 4
+					5 6	
+			   wrap-reverse - перенос против поперечной оси	5 6
+										                    3 4
+	                                                        1 2 
+	align-content: 	раст€гивание контента по поперечной оси
+					stretch - по умолч
+					flex-end
+					flex-start
+					space-around
+					space-between
+					

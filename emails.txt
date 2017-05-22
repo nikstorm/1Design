@@ -1,0 +1,4 @@
+alexf4390@mail.ru goger777 Алексей Филонов
+freelance alexf4390 zurik668
+
+--allow-file-access-from-files --disable-web-security

@@ -1,0 +1,76 @@
+
+
+@var_name: fddgfg; объ€вление переменных
+
+
+spin(v1,v2) - смещенеие по цветовому кругу v1+v2
+
+
+.btn{
+	&-zzz{
+		color:red;
+	}
+	
+} означает 
+
+.btn-zzz{
+	color:red;
+}
+
+color: lighten(@base-color, 50%) - осветление color на 50% от @base-color
+	   darken(@base-color, 50%)
+	   
+color: rgb(122,34,255) + 10 - прибавить 10 к каждой величине
+
+color: saturate(green, 20%); // green насыщеннее на 20%
+color: desaturate(blue, 50%); // blue бледнее на 50%
+
+background-color:desaturate(lighten(@base-color, 20%),70%); вложенность функций
+
+.white { color: white; } /* объ€вление примеси */
+.text { .white; }        /* применение примеси */
+будет
+.white { color: white; }
+.text { color: white; }
+
+
+.white() { color: white; } /* объ€вление невыводимой примеси */
+.text { .white; }          /* применение примеси */
+будет
+.text { color: white; }
+
+/* Ёти выражени€ дают один и тот же результат: */
+.mixin();
+.mixin;
+
+.margin(@value) {
+    margin-top: @value;
+    margin-bottom: @value;
+}
+
+.block {
+    .margin(10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	   

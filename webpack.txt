@@ -1,0 +1,15 @@
+
+webpack source output
+
+создать webpack.config.js
+module.exports = {
+	entry:'./main.js',
+	output:{
+		filename:'bundle.js'
+	
+	}
+
+}
+
+webpack
+webpack --watch

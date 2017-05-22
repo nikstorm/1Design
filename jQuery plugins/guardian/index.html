@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="guardian.css">
+	 
+</head>
+<body>
+	<form id="example1" action="javascript:alert('Validation Successful')">
+    <div> 
+        <label>Name<span class="red">*</span></label>
+        <input type="text" name="name" required="required">
+    </div>
+     
+    <div>
+        <label>Email<span class="red">*</span></label>
+        <input type="email" name="email" required="required">
+    </div>
+     
+    <div>
+        <label>Phone</label>
+        <input type="tel" name="phone">
+    </div>
+     
+    <input type="submit" name="submit" value="Submit">      
+</form> 
+<form id="example2" class="error-messaging" action="javascript:alert('Validation Successful')">
+    <div> 
+        <label>Name<span class="red">*</span></label>
+        <input type="text" name="name" data-pattern="alpha" required="required" data-empty-message="Please provide a name." data-error-message="Please provide a valid name.">
+    </div>
+     
+    <div>
+        <label>Email<span class="red">*</span></label>
+        <input type="email" name="email" required="required" data-empty-message="Please provide a email." data-error-message="Please provide a valid email.">
+    </div>
+     
+    <div>
+        <label>Phone</label>
+        <input type="tel" name="phone" data-error-message="Please provide a valid phone number.">
+    </div>
+     
+    <div> 
+        <input type="submit" name="submit" value="Submit">
+    </div>
+</form>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="jquery.guardian-1.0.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#example2').guardian();
+	});
+	</script>
+</body>
+</html>

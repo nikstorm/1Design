@@ -1,0 +1,36 @@
+var usr;
+function detectBrowser(){
+	var agent = navigator.userAgent;
+	
+    if(agent.lastIndexOf('OPR') != -1){
+         //alert("Opera");
+         return usr = "Opera";
+     }
+    else if(agent.indexOf('Chrome') != -1){
+         //alert("Chrome");
+         return usr = "Chrome";
+
+     }
+    else if(agent.indexOf('Mozilla') != -1){
+         //alert("Mozilla");
+        return usr = "Mozilla";
+    }
+};
+
+
+$(document).ready(function(){
+	detectBrowser();
+	if(usr == "Mozilla"){
+		$('footer').css('width','1009').css('bottom','-24px');
+		$('.doctors').css('bottom','-820px');
+	}
+	else if(usr == "Opera"){
+		$('footer').css('width','1009').css('bottom','-22px');	
+	}
+	else if(usr == "Chrome"){
+		$('footer').css('left','201px').css('bottom','-24px');	
+	}
+});
+
+
+

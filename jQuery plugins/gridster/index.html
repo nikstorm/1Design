@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="gridster/dist/jquery.gridster.min.css">
+	 
+	
+</head>
+<body>
+	<div class="gridster">
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+
+        <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"><div class="widget"></div></li>
+
+        <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="2" data-col="4" data-sizex="2" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+
+        <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+
+        <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"><div class="widget"></div></li>
+        <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"><div class="widget"></div></li>
+    </ul>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="gridster/dist/jquery.gridster.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(function(){ //DOM Ready
+
+		    $(".gridster ul").gridster({
+		        widget_margins: [10, 10],
+		        widget_base_dimensions: [100, 100]
+		    });
+		 var gridster = $(".gridster ul").gridster().data('gridster');
+		 var grd = gridster.serialize();
+		  
+		});
+	});
+</script>
+</body>
+</html>

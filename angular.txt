@@ -1,0 +1,218 @@
+html ng-app
+
+input ng-model="dss"
+{{dss}}
+
+input checkbox ng-model="dsd"
+div ng-show="dsd" текст который увидим от галочки
+
+
+ƒирективы:
+ в описании camelCase ngApp, ngRoute
+ в документе ng-app, ng:app, ng_app, x-ng-app, data-ng-app(совместимость с HTML5)
+ 
+ ngApp - корнева€ директива приложени€
+ 
+ ngInit - задает начальное значение при инициализации шаблона
+		div ng-init="name='dasdada'"
+
+ ngBind - аналог {{}} позвол€ет скрыть выражение до начала обработки шаблона		
+
+ $scope - аналог this
+	function($scope){
+		$scope....
+	}
+ 
+ онтроллеры
+var phonecatApp = angular.module('phonecatApp',[]);
+    	phonecatApp.controller('DemoCtrl'.function($scope){
+    		$scope.phones = [
+    			{
+    				'name':'Nexus S',
+    				'snippet':'Lorem ipsum dolor sit amet.'
+    			},
+    			{
+    				'name':'Motorola XOOM',
+    				'snippet':'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+    			},
+    			{
+    				'name':'Razr V3',
+    				'snippet':'Lorem ipsum dolor sit ametsddfsfds.'
+    			}
+
+    		];	
+    	});
+    	});
+		
+		
+<ul>
+    	<li>
+    		<span>{{phones[0].name}}</span>
+    		<p>{{phones[0].snippet}}</p>
+    	</li>
+    	<li>
+    		<span>{{phones[1].name}}</span>
+    		<p>{{phones[1].snippet}}</p>
+    	</li>
+    	<li>
+    		<span>{{phones[2].name}}</span>
+    		<p>{{phones[2].snippet}}</p>
+    	</li>
+    </ul>
+
+	фильтры
+	var date = new Date();
+	$scope.today = date;
+	
+	{{today | date:'yyyy' }}
+	$scope.phones = [
+	{
+    				'name':'Motorola Razr V3',
+    				'snippet':'asdfgh.',
+    				'status':'true'
+    			}]
+	<li ng-repeat="phone in phones| filter:{name:query, status:true}">
+	
+	Формат date
+	
+		' yyyy' : 4 цифры для вывода года (например, 1 => 0001, 2010 => 2010)
+• ' yy' : 2 последние цифры года (00-99). (пример, 2001 => 01, 2010 => 10)
+• ' y' : 1 число для вывода года (например, 1 => 1, 199 => 199)
+• 'MMMM' : месяц в длинном формате (January-December)
+• ' MMM' : месяц в трехбуквенном формате (Jan-Dec)
+• ' MM' : месяц цифрами, с ведущим нулем (01 -12)
+• 'M' : месяц цифрами, без ведущего нуля (1 -12)
+• ' dd' : день в месяце, с ведущим нулем (01 -31)
+• 'd' : день в месяце, без ведущего нуля (1 -31)
+• ' EEEE' : День недели в длинном формате,(Sunday-Saturday)
+• ' EEE' : День недели в коротком формате, (Sun-Sat)
+• ' HH' : Час, с ведущим нулем (00-23)
+• 'H' : Час без ведущего нуля (0-23)
+• ' hh' : Час, с ведущим нулем в 12-ти часовом формате (01 -12)
+• ' h' : Час без ведущего нуля в 12-ти часовом формате (1 -12)
+• ' mm' : Минуты с ведущим нулем (00-59)
+• 'm' : Минуты без ведущего нуля(0-59)
+• ' ss' : Секунды с ведущим нулем (00-59)
+• 's' : Секунды без ведущего нуля (0-59)
+• ' a' : Указатель am/pm для 12-ти часового формата.
+• ' Z' : 4 цифры (плюс знак), представляющие сдвиг временной зоны (часовой пояс) (-1200-
++1200)
+Форматная строка может также иметь одно из следующих предопределенных в форматах
+локализации значений:
+• ' medium' : эквивалент ' MMM d, y h: mm: ss a' для локализации en_US (пример, Sep 3, 2010
+12:05:08 pm)
+• ' short' : эквивалент ' M/d/yy h: mm a' для локализации en_US (пример, 9/3/10 12:05 pm)
+• ' fullDate' : эквивалент ' EEEE, MMMM d, y' для локализации en_US (пример, Friday,
+September 3, 2010)
+• ' longDate' : эквивалент ' MMMM d, y' для локализации en_US (пример, September 3, 2010)
+• ' mediumDate' : эквивалент ' MMM d, y' для локализации en_US (пример, Sep 3, 2010)
+• ' shortDate' : эквивалент ' M/d/yy' для локализации en_US (пример, 9/3/10)
+• ' mediumTime' : эквивалент ' h: mm: ss a' для локализации en_US (пример, 12:05:08 pm)
+• ' shortTime' : эквивалент ' h: mm a' для локализации en_US (пример 12:05 pm)
+Форматная строка может содержать литеральные значения. Их нужно помещать в одинарные
+кавычки (пример, "h ' in the morning'"). В случае если одинарные кавычки должны
+присутствовать в выходной строке, используйте двойные одинарные кавычки (пример, "h
+o'' clock").
+	—ервисы
+	
+	$http.get('url') - http запрос
+	$http.get('phones/phones.json').success(function(){
+    			
+    		}).error(function(){
+    			
+    		});
+	$http.get('phones/phones.json').success(function(data,status,headers,config){
+    			console.log('This is Data:',data,'\n\n This is Status:', status,'\n\n This is Headers:',headers,'\n\n This is Config:',config);
+    		}).error(function(){
+    			
+    		});
+	$http.post(url,data,[config]);
+	$http.put(url,data,[config]);
+	$http.patch(url,data,[config]);
+	$http.delete(url,[config]);
+	$http.head(url,[config]);
+	$http.post(url,data,[config]);
+	$http.jsonp(url,[config]);
+	
+	
+	var phonecatApp = angular.module('phonecatApp', ['ngRoute']);
+
+phonecatApp.config(['$routeProvider','$locationProvider', function($routeProvide, $locationProvider) {
+	$locationProvider.html5Mode({
+		enabled:true,
+		requireBase:false
+	})
+	$routeProvide
+		.when('/',{
+			templateUrl:'template/home.html',
+			controller:'PhoneListCtrl'
+		})
+		.when('/about',{
+			templateUrl:'template/about.html',
+			controller:'PhoneListCtrl'
+		})
+		.when('/contact',{
+			templateUrl:'template/contact.html',
+			controller:'PhoneListCtrl'
+		})
+		.when('/phones/:phoneId',{
+			templateUrl:'template/phone-detail.html',
+			controller:'PhoneDetailCtrl'
+		})
+		.otherwise({
+			redirectTo:'/'
+		});
+}]);
+	
+	
+Свой фильтр
+
+phonecatApp.filter('checkmark',function(){
+  return function(unput){
+    console.log(input);
+  }
+});
+
+{{dfsfs | название фильтра(checkmark)}}
+	
+	
+	
+	
+	
+	ФАБРИКА
+	
+	myApp.controller('MyCtrl1', ['$scope','myFactory', function ($scope, myFactory) {
+	$scope.names = [
+
+		{'a':'puk'},
+		{'a':'nik'}
+	];
+	$scope.myFactory = myFactory;
+	var today = new Date();
+	$scope.today = today;
+}]);
+myApp.controller('MyCtrl2', ['$scope','myFactory', function ($scope,myFactory) {
+		$scope.myFactory = myFactory;
+
+}]);
+
+myApp.factory('myFactory', [function () {
+	
+
+	return {
+		hello: 'hello world'
+	};
+}])
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,3 @@
+[09-Mar-2015 23:41:47 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 13056 bytes) in /home/luckytakeoff/public_html/sites/wintzy.com/coffeelini_adm/classes/_class.func.php on line 325
+[09-Mar-2015 23:43:22 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 13056 bytes) in /home/luckytakeoff/public_html/sites/wintzy.com/coffeelini_adm/classes/_class.func.php on line 325
+[09-Mar-2015 23:49:25 UTC] PHP Fatal error:  Allowed memory size of 67108864 bytes exhausted (tried to allocate 13056 bytes) in /home/luckytakeoff/public_html/sites/wintzy.com/coffeelini_adm/classes/_class.func.php on line 325

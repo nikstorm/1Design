@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: 
+Sitemap: http://auto-kasko.info/sitemap.xml
+
+User-agent: Aport
+Disallow: /
+User-agent: msnbot
+Disallow: /
+User-agent: psbot
+Disallow: /
+User-agent: yahoo-slurp
+Disallow: /
