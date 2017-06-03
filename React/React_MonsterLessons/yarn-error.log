@@ -1,0 +1,38 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add redux
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Perl\site\bin;C:\Perl\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\Program Files (x86)\Skype\Phone\;c:\users\nikstorm;C:\Python35\Scripts\;C:\Python35\;C:\Users\nikstorm\AppData\Local\Programs\Python\Launcher\;C:\Ruby23\bin;C:\Ruby23-x64\bin;C:\Users\nikstorm\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\Users\nikstorm\AppData\Local\Yarn\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+
+Yarn version: 
+  0.24.5
+
+Node version: 
+  6.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "React_MonsterLessons",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: Invalid value type 7:0 in C:\Users\nikstorm\.yarnrc
+      at Parser.unexpected (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:36540:11)
+      at Parser.parse (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:36642:16)
+      at exports.default (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:36326:17)
+      at C:\Program Files (x86)\Yarn\lib\yarn-cli.js:77681:62
+      at next (native)
+      at step (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:91:30)
+      at C:\Program Files (x86)\Yarn\lib\yarn-cli.js:102:13

@@ -1,0 +1,80 @@
+<html>
+02
+<head>
+03
+    /* Google reCaptcha JS */
+04
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+05
+</head>
+06
+<body>
+07
+<form action="" method="post">
+08
+    Username
+09
+    <input type="text" name="username" class="input" />
+10
+    Password
+11
+    <input type="password" name="password" class="input" />
+12
+    <div class="g-recaptcha" data-sitekey="Google Site Key"></div>
+13
+    <input type="submit"  value="Log In" />
+14
+    <span class='msg'><?php echo $msg; ?></span>
+15
+</form>
+16
+</body>
+17
+</html>
+
+
+
+<?php
+
+include("db.php");
+
+session_start();
+
+ 
+
+$msg='';
+
+if($_SERVER["REQUEST_METHOD"] == "POST")
+
+{
+
+    $recaptcha=$_POST['g-recaptcha-response'];
+
+    if(!empty($recaptcha))
+
+    {
+        include("getCurlData.php");
+        $google_url="https://www.google.com/recaptcha/api/siteverify";
+        $secret='6Le0-hETAAAAAFEb5moFavV_iZT34G9ex914Cebr';
+        $ip=$_SERVER['REMOTE_ADDR'];
+        $url=$google_url."?secret=".$secret."&response=".$recaptcha."&remoteip=".$ip;
+        $res=getCurlData($url);
+        $res= json_decode($res, true);
+        //reCaptcha введена
+        if($res['success'])
+        {
+            // Продолжаем проверку данных формы
+        }
+        else
+        {
+            $msg="Please re-enter your reCAPTCHA.";
+        }
+ 
+    }
+    else
+    {
+        $msg="Please re-enter your reCAPTCHA.";
+    }
+}
+?>
+

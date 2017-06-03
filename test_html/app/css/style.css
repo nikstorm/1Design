@@ -1,0 +1,32 @@
+body {
+  background-color: #fff; }
+
+.main {
+  display: flex; }
+
+.bl* {
+  justify-content: space-around;
+  align-content: space-between;
+  border: 1px solid green; }
+
+.boxes {
+  width: 98%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.box {
+  margin: 30px auto;
+  max-width: 400px;
+  border: 2px dotted black;
+  background-color: orange;
+  box-shadow: 5px 5px 10px 10px red; }
+
+.two {
+  max-width: 400px; }
+
+img {
+  max-width: 400px; }
